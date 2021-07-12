@@ -1,34 +1,34 @@
 ## BACK END ##
-./FrontEnd/processos_api/HELP.md
-./FrontEnd/processos_api/target/
-!./FrontEnd/processos_api/.mvn/wrapper/maven-wrapper.jar
-!**./FrontEnd/processos_api/src/main/**/target/
-!**./FrontEnd/processos_api/src/test/**/target/
+./BackEnd/processos_api/HELP.md
+./BackEnd/processos_api/target/
+!./BackEnd/processos_api/.mvn/wrapper/maven-wrapper.jar
+!**./BackEnd/processos_api/src/main/**/target/
+!**./BackEnd/processos_api/src/test/**/target/
 
 ### STS ###
-./FrontEnd/processos_api/.apt_generated
-./FrontEnd/processos_api/.classpath
-./FrontEnd/processos_api/.factorypath
-./FrontEnd/processos_api/.project
-./FrontEnd/processos_api/.settings
-./FrontEnd/processos_api/.springBeans
-./FrontEnd/processos_api/.sts4-cache
+./BackEnd/processos_api/.apt_generated
+./BackEnd/processos_api/.classpath
+./BackEnd/processos_api/.factorypath
+./BackEnd/processos_api/.project
+./BackEnd/processos_api/.settings
+./BackEnd/processos_api/.springBeans
+./BackEnd/processos_api/.sts4-cache
 
 ### IntelliJ IDEA ###
-./FrontEnd/processos_api/.idea
-*./FrontEnd/processos_api/.iws
-*./FrontEnd/processos_api/.iml
-*./FrontEnd/processos_api/.ipr
+./BackEnd/processos_api/.idea
+*./BackEnd/processos_api/.iws
+*./BackEnd/processos_api/.iml
+*./BackEnd/processos_api/.ipr
 
 ### NetBeans ###
-./FrontEnd/processos_api//nbproject/private/
-./FrontEnd/processos_api//nbbuild/
-./FrontEnd/processos_api//dist/
-./FrontEnd/processos_api//nbdist/
-./FrontEnd/processos_api//.nb-gradle/
-./FrontEnd/processos_api/build/
-!**./FrontEnd/processos_api/src/main/**/build/
-!**./FrontEnd/processos_api/src/test/**/build/
+./BackEnd/processos_api//nbproject/private/
+./BackEnd/processos_api//nbbuild/
+./BackEnd/processos_api//dist/
+./BackEnd/processos_api//nbdist/
+./BackEnd/processos_api//.nb-gradle/
+./BackEnd/processos_api/build/
+!**./BackEnd/processos_api/src/main/**/build/
+!**./BackEnd/processos_api/src/test/**/build/
 
 ### VS Code ###
 .vscode/
