@@ -21,11 +21,11 @@
 *./BackEnd/processos_api/.ipr
 
 ### NetBeans ###
-./BackEnd/processos_api//nbproject/private/
-./BackEnd/processos_api//nbbuild/
-./BackEnd/processos_api//dist/
-./BackEnd/processos_api//nbdist/
-./BackEnd/processos_api//.nb-gradle/
+./BackEnd/processos_api/nbproject/private/
+./BackEnd/processos_api/nbbuild/
+./BackEnd/processos_api/dist/
+./BackEnd/processos_api/nbdist/
+./BackEnd/processos_api/.nb-gradle/
 ./BackEnd/processos_api/build/
 !**./BackEnd/processos_api/src/main/**/build/
 !**./BackEnd/processos_api/src/test/**/build/
