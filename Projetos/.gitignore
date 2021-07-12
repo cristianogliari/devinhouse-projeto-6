@@ -1,0 +1,15 @@
+./FrontEnd/front_processos/.idea/
+./FrontEnd/front_processos/.vscode/
+./FrontEnd/front_processos/node_modules/
+./FrontEnd/front_processos/build
+./FrontEnd/front_processos/.DS_Store
+./FrontEnd/front_processos/*.tgz
+./FrontEnd/front_processos/my-app*
+./FrontEnd/front_processos/template/src/__tests__/__snapshots__/
+./FrontEnd/front_processos/lerna-debug.log
+./FrontEnd/front_processos/npm-debug.log*
+./FrontEnd/front_processos/yarn-debug.log*
+./FrontEnd/front_processos/yarn-error.log*
+./FrontEnd/front_processos/.changelog
+./FrontEnd/front_processos/.npm/
+./FrontEnd/front_processos/yarn.lock
