@@ -1,8 +1,24 @@
+import { CssBaseline, ThemeProvider } from '@material-ui/core'
+import { BrowserRouter } from 'react-router-dom';
+
+import { Routes } from './routes';
+
+import { Home } from './pages';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <ThemeProvider>
+    {/* <ThemeProvider theme={theme}> */}
+
+      <CssBaseline />
+
+      <BrowserRouter>
+        <Routes>
+          <Home />
+        </Routes>
+      </BrowserRouter>
+
+    </ThemeProvider>
   );
 }
 
