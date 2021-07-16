@@ -1,4 +1,4 @@
-import { Redirect, Route, Switch } from "react-router";
+import { Redirect, Route, Switch } from "react-router-dom";
 import { Home, InfoUsuario, Login } from "../pages";
 
 export const Routes = () => {
