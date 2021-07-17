@@ -5,6 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "*",
     "@material-ui/styles": "^4.11.4",
     "formik": "^2.2.9",
     "react": "^17.0.2",
