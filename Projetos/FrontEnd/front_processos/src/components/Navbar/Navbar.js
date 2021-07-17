@@ -8,7 +8,7 @@ import { LogoArea } from "./LogoArea"
 
 import { useStyles } from "./Navbar.styles";
 
-const loginStatus = false;
+const loginStatus = true;
 
 export function Navbar() {
   const classes = useStyles();
@@ -17,6 +17,10 @@ export function Navbar() {
 
   const handleChangeInfoPerfil = () => {
     setInfoPerfil((prev) => !prev);
+  };
+
+  const handleClickAway = () => {
+    setInfoPerfil(false);
   };
 
   return (
@@ -43,7 +47,7 @@ export function Navbar() {
       </AppBar>
       {abreInfoPerfil === true && (
         <div className={classes.divProfile}>
-          <ProfileCard />
+          <ProfileCard clickAwayEvent={handleClickAway}/>
         </div>
       )}
     </>
