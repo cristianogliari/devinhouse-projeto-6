@@ -1,9 +1,11 @@
+import {Navbar} from "../../components/Navbar";
 import { ProcessoCard } from "../../components";
 import Skeleton from '@material-ui/lab/Skeleton';
 
 export const Home = () => {
   return (
     <>
+    <Navbar/>
       <h1>Homepage</h1>
       <ProcessoCard />      
 
