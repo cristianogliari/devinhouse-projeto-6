@@ -12,6 +12,7 @@ export function SearchBar() {
       className={classes.searchBar}
       placeholder="Pesquise por um processo"
       variant="outlined"
+      size="small"
       InputProps={{
         endAdornment: (
           <InputAdornment position="end">

@@ -4,7 +4,7 @@ export const useStyles = makeStyles((theme) => ({
   profileCard: {
     borderRadius: "1",
     width: "20%",
-    backgroundColor: "black"
+    position: "absolute"
   },
 
   divAvatar: {

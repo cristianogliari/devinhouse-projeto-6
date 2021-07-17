@@ -1,39 +1,51 @@
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Toolbar } from "@material-ui/core";
+import { useState } from "react";
 
 import { SearchBar } from "./SearchBar";
 import { AvatarArea } from "./AvatarArea";
 import { ProfileCard } from "./ProfileCard";
+import { LogoArea } from "./LogoArea"
 
 import { useStyles } from "./Navbar.styles";
 
-const loginStatus = true;
+const loginStatus = false;
 
 export function Navbar() {
   const classes = useStyles();
 
+  const [abreInfoPerfil, setInfoPerfil] = useState(false);
+
+  const handleChangeInfoPerfil = () => {
+    setInfoPerfil((prev) => !prev);
+  };
+
   return (
     <>
       <AppBar position="static" className={classes.botoes} color="primary">
-        <Toolbar className={classes.toolBar} variant="regular">
-          {loginStatus === false ? (
-            <>
-              <Typography>Realize o login</Typography>
-            </>
-          ) : (
+        <Toolbar
+          className={
+            loginStatus === false ? classes.toolBarOff : classes.toolBarLogado
+          }
+          variant="regular"
+        >
+         <LogoArea />
+          {loginStatus === true && (
             <>
               <div className={classes.divSearchBar}>
                 <SearchBar />
               </div>
               <div className={classes.divAvatarArea}>
-                <AvatarArea />
+                <AvatarArea handleChangeInfoPerfil={handleChangeInfoPerfil} />
               </div>
             </>
           )}
         </Toolbar>
       </AppBar>
-      <div className={classes.divProfile}>
-        <ProfileCard />
-      </div>
+      {abreInfoPerfil === true && (
+        <div className={classes.divProfile}>
+          <ProfileCard />
+        </div>
+      )}
     </>
   );
 }

@@ -1,7 +1,12 @@
 import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
-    toolBar: {
+    toolBarOff: {
+        display: "flex",
+        justifyContent: "space-between"
+    },
+
+    toolBarLogado: {
         display: "flex",
         justifyContent: "space-between"
     },
@@ -14,7 +19,6 @@ export const useStyles = makeStyles((theme) => ({
         width: "100vw",
         display: "flex",
         justifyContent: "flex-end",
-        padding: theme.spacing(0.5),
         paddingRight: theme.spacing(2),
     },
 
