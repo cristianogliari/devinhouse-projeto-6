@@ -46,9 +46,9 @@ export const useStyles = makeStyles((theme) => ({
   },
   gridIconSize: {
     display: 'flex',
-    marginTop: '10px',
+    marginTop: '6px',
     marginLeft: 'auto',
-    marginRight: '10px',
+    marginRight: '6px',
     padding: 0,
       '&:last-child': {
         paddingBottom: 0,
@@ -85,7 +85,7 @@ export const useStyles = makeStyles((theme) => ({
     transform: 'rotate(0deg)',
     marginLeft: 'auto',
     transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.short,
+      duration: theme.transitions.duration.standard,
     }),
   },
   expandOpen: {

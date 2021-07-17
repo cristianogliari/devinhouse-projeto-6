@@ -32,7 +32,7 @@ export const ProcessoCard = () => {
             </CardContent>
           </Grid>
           <Grid item xs={8}>
-            <CardContent className={classes.gridTypoSize}>
+            <CardContent className={classes.gridTypoSize} style={{ marginLeft: '10px' }} >
               <Grid container spacing={0}>
                 <Grid item xs={4} className={classes.gridCardStyle} >
                   <CardContent className={classes.gridTypoSize}>
@@ -47,12 +47,12 @@ export const ProcessoCard = () => {
                   </CardContent>
                 </Grid>
                 <Grid item xs={3}>
-                  <CardContent className={classes.gridTypoSize}>
+                  <CardContent className={classes.gridTypoSize} style={{ marginLeft: '10px' }}>
                     <Typography className={classes.title}>
                       Data
                     </Typography>
                   </CardContent>
-                  <CardContent className={classes.gridTypoSize}>
+                  <CardContent className={classes.gridTypoSize} style={{ marginLeft: '10px' }}>
                     <Typography className={classes.subtitle}>
                       07/08/2018
                     </Typography>
@@ -60,12 +60,12 @@ export const ProcessoCard = () => {
                 </Grid>
               </Grid>
             </CardContent>
-            <CardContent className={classes.gridTypoSize}>
+            <CardContent className={classes.gridTypoSize} style={{ marginLeft: '10px' }} >
               <Typography className={classes.title}>
                 Assunto
               </Typography>
             </CardContent>
-            <CardContent className={classes.gridTypoSize}>
+            <CardContent className={classes.gridTypoSize} style={{ marginLeft: '10px' }} >
               <Typography className={classes.subtitle}>
                 Corte de Árvores Frutíferas
               </Typography>
@@ -74,9 +74,15 @@ export const ProcessoCard = () => {
           <Grid item xs={2}>
             <CardContent className={classes.gridTypoSize}>
               <CardContent className={classes.gridIconSize}>
-                <CreateIcon fontSize='small' style={{ color: '#666666' }} />
-                <DeleteIcon fontSize='small' style={{ color: '#666666' }} />
-                <CardActions disableSpacing style={{ padding: '0' }}>
+                <IconButton aria-label='editar' style={{ padding: '2px' }}>
+                  <CreateIcon fontSize='small' style={{ color: '#666666' }} style={{ padding: '0' }} />
+                </IconButton>
+        
+                <IconButton aria-label='deletar' style={{ padding: '2px' }}>
+                  <DeleteIcon fontSize='small' style={{ color: '#666666' }} style={{ padding: '0' }} />
+                </IconButton>
+
+                <CardActions disableSpacing style={{ padding: '2px' }}>
                   <IconButton
                     className={classes.expand, {
                       [classes.expandOpen]: expanded,
@@ -85,8 +91,8 @@ export const ProcessoCard = () => {
                     aria-expanded={expanded}
                     fontSize='small'
                     style={{ padding: '0' }}
-                    aria-label="show more" >
-                    <ExpandMoreIcon />
+                    aria-label="mostrar mais informações" >
+                      <ExpandMoreIcon />
                   </IconButton>
                 </CardActions>
               </CardContent>
@@ -95,7 +101,7 @@ export const ProcessoCard = () => {
         </Grid>      
       </CardContent>
       <CardContent className={classes.moreInfo}>
-        <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <Collapse in={expanded} timeout="auto" unmountOnExit style={{ borderTop: '1px solid #c6c6c675' }}>
           <CardContent className={classes.moreInfo}>
             <Grid container spaceing={0}>
               <Grid item xs={3}>
