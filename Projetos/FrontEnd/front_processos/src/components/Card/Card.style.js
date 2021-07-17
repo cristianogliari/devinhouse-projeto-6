@@ -4,7 +4,9 @@ import { FullscreenExit } from "@material-ui/icons";
 export const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: '50%',
-    margin: 'auto',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginBottom: '50px',
     border: '1px solid #c6c6c675',
     borderRadius: '5px',
     boxShadow: 'none',
