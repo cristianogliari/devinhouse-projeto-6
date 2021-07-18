@@ -20,8 +20,10 @@ import card_img from "../../assets/images/card_img.png";
 
 import { useStyles } from "./Card.style";
 
-export const ProcessoCard = () => {
+export const ProcessoCard = (props) => {
   const classes = useStyles();
+
+  const {handleEdit, handleDelete} = props;
 
   const [expanded, setExpanded] = useState(false);
 
@@ -101,19 +103,25 @@ export const ProcessoCard = () => {
             <Grid item xs={2}>
               <CardContent className={classes.gridTypoSize}>
                 <CardContent className={classes.gridIconSize}>
-                  <IconButton aria-label="editar" style={{ padding: "2px" }}>
+                  <IconButton 
+                  aria-label="editar" 
+                  style={{ padding: "2px" }}
+                  onClick={handleEdit}
+                  >
                     <CreateIcon
                       fontSize="small"
-                      style={{ color: "#666666" }}
-                      style={{ padding: "0" }}
+                      style={{ color: "#666666", padding: "0" }}
                     />
                   </IconButton>
 
-                  <IconButton aria-label="deletar" style={{ padding: "2px" }}>
+                  <IconButton 
+                  aria-label="deletar" 
+                  style={{ padding: "2px" }}
+                  onClick={handleDelete}
+                  >
                     <DeleteIcon
                       fontSize="small"
-                      style={{ color: "#666666" }}
-                      style={{ padding: "0" }}
+                      style={{ color: "#666666", padding: "0" }}
                     />
                   </IconButton>
 
