@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core";
-import { FullscreenExit } from "@material-ui/icons";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
