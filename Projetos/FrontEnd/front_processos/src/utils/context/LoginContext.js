@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useState } from "react";
 
+import { AxiosLogin } from "../axios/AxiosLogin";
+
 const LoginContext = createContext({});
 
 const LoginProvider = ({ children }) => {
@@ -11,7 +13,7 @@ const LoginProvider = ({ children }) => {
     setLogin({ payload, state: "ready" });
   };
   const conectar = async () => {
-    const resultado = await Placeholder.placholder();
+    const resultado = await AxiosLogin.placholder();
     logar(resultado);
   };
   const desconectar = () => {
