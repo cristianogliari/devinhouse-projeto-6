@@ -9,10 +9,10 @@ export function LogoArea() {
 
   return (
     <div className={classes.divLogo}>
-      <Typography className={classes.logo}>DEVinHouse</Typography>
-      <Icon className={classes.icone}>
+      <Icon className={classes.icone} style={{ marginRight: '10px', marginLeft: '10px' }}>
         <img src={rocketlaunch} alt="rocketlaunch" className={classes.img}/>
       </Icon>
+      <Typography className={classes.logo}>DEVinHouse</Typography>
     </div>
   );
 }
