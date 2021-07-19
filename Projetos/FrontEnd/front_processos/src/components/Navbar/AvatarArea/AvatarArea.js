@@ -18,7 +18,7 @@ export function AvatarArea(props) {
         Nome da pessoa
         <ExpandMoreIcon fontSize="small" />
       </Button>
-      <IconButton>
+      <IconButton onClick={changeTheme}>
         <Brightness4Icon className={classes.brigthIcon} />
       </IconButton>
     </>
