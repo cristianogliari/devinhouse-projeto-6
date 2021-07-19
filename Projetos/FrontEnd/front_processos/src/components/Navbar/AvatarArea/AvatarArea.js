@@ -3,11 +3,13 @@ import { IconButton, Avatar, Button } from "@material-ui/core";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+import { useCustomTheme } from "../../../utils/context/themeContext";
+
 import { useStyles } from "./AvatarArea.styles";
 
 export function AvatarArea(props) {
   const classes = useStyles();
-
+  const { changeTheme } = useCustomTheme();
   const { handleChangeInfoPerfil } = props;
   return (
     <>

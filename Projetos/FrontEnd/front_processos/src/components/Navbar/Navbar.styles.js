@@ -1,6 +1,10 @@
 import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
+    navBar: {
+        marginBottom: theme.spacing(5)
+    },
+
     toolBarOff: {
         display: "flex",
         justifyContent: "space-between"
