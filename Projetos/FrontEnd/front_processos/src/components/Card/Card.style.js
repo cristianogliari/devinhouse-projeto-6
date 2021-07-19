@@ -2,15 +2,15 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: "50%",
+    maxWidth: "90%",
     marginLeft: "auto",
     marginRight: "auto",
     marginBottom: "50px",
-    border: "1px solid #c6c6c675",
+    border: "1px solid #c6c6c6",
     borderRadius: "5px",
     boxShadow: "none",
     "&:last-child": {
-      paddingBottom: 0,
+      paddingBottom: '0px',
     },
   },
   title: {
