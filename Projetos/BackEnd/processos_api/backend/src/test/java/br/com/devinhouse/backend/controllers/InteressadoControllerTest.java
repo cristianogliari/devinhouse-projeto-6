@@ -5,7 +5,9 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,6 +63,28 @@ public class InteressadoControllerTest {
 			.andExpect(jsonPath("nuidentificacao").value(interessadoACadastrar.getNuidentificacao()))
 			.andExpect(jsonPath("nminteressado").value(interessadoACadastrar.getNminteressado()));
 			
+	}
+	
+	@Test
+	void deveBuscarTodosOsInteressadosControllerTest() throws Exception {
+		//given
+		List<Interessado> listaInteressados = new ArrayList<Interessado>();
+		listaInteressados.add(interessado);
+		
+		given(interessadoService.buscarTodosOsInteressados()).willReturn(listaInteressados);
+		
+		MockHttpServletRequestBuilder requisicao = MockMvcRequestBuilders
+				.get("/interessados/v1/buscar")
+				.accept(MediaType.APPLICATION_JSON)
+				.header("api-version", "v1");
+		
+		// when
+		ResultActions retornoDeAcoes = mockMvc.perform(requisicao);
+		
+		//then
+		retornoDeAcoes
+			.andExpect(status().isOk())
+			.andExpect(jsonPath("[0].id").value(interessado.getId()));
 	}
 	
 	@Test
