@@ -4,6 +4,10 @@ export const useStyle = makeStyles((theme) => ({
   paperForm: {
     width: '100%',
     height: '100%',
+    maxWidth: 500,
+    maxHeight: 500,
+    margin: "auto",
+    marginTop: "5%",
   },
   titulo: {
     fontWeight:"bold",
@@ -18,20 +22,19 @@ export const useStyle = makeStyles((theme) => ({
     maxWidth: 950,
     padding: 10,
   },
-  formLinha: {
-    display: 'flex',
-    flexDirection: 'row',
-  },
-  botaoFim: {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    width: '100%',
-  },
-  descricaoMargin: {
+  textFieldStyles: {
+    marginTop: 0,
     margin: 10,
+    maxWidth: 400,
   },
   maxWidthMargin: {
     margin: 10,
-    maxWidth: 300,
+    maxWidth: 200,
+  },
+  cadastrar: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    width: '100%',
+    marginTop:20,
   },
 }));

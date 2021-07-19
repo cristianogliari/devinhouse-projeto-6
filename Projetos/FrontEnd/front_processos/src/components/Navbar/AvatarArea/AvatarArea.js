@@ -13,15 +13,14 @@ export function AvatarArea(props) {
   const { handleChangeInfoPerfil } = props;
   return (
     <>
-      <IconButton onClick={changeTheme}>
-        <Brightness4Icon className={classes.brigthIcon} />
-      </IconButton>
-
       <Button className={classes.button} onClick={handleChangeInfoPerfil}>
         <Avatar src="https://i.pravatar.cc/300" className={classes.avatar} />
         Nome da pessoa
         <ExpandMoreIcon fontSize="small" />
       </Button>
+      <IconButton>
+        <Brightness4Icon className={classes.brigthIcon} />
+      </IconButton>
     </>
   );
 }
