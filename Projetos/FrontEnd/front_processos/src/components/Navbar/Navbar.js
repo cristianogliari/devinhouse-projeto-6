@@ -4,7 +4,7 @@ import { useState } from "react";
 import { SearchBar } from "./SearchBar";
 import { AvatarArea } from "./AvatarArea";
 import { ProfileCard } from "./ProfileCard";
-import { LogoArea } from "./LogoArea"
+import { LogoArea } from "./LogoArea";
 
 import { useStyles } from "./Navbar.styles";
 
@@ -25,14 +25,14 @@ export function Navbar() {
 
   return (
     <>
-      <AppBar position="static" className={classes.botoes} color="primary">
+      <AppBar position="static" className={classes.navBar} color="primary">
         <Toolbar
           className={
             loginStatus === false ? classes.toolBarOff : classes.toolBarLogado
           }
           variant="regular"
         >
-         <LogoArea />
+          <LogoArea />
           {loginStatus === true && (
             <>
               <div className={classes.divSearchBar}>
@@ -44,12 +44,12 @@ export function Navbar() {
             </>
           )}
         </Toolbar>
+        {abreInfoPerfil === true && (
+          <div className={classes.divProfile}>
+            <ProfileCard clickAwayEvent={handleClickAway} />
+          </div>
+        )}
       </AppBar>
-      {abreInfoPerfil === true && (
-        <div className={classes.divProfile}>
-          <ProfileCard clickAwayEvent={handleClickAway}/>
-        </div>
-      )}
     </>
   );
 }
