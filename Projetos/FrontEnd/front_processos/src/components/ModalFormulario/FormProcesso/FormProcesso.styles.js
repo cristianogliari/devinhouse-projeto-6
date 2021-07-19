@@ -6,7 +6,7 @@ export const useStyle = makeStyles((theme) => ({
     height: '100%',
   },
   titulo: {
-    fontWeight:"fontWeightBold",
+    fontWeight:"bold",
     margin: 10,
     padding: 10,
   },
