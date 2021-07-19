@@ -3,7 +3,7 @@ import axios from 'axios';
 import { BASE_URL } from '../services/BASE_URL';
 
 class AxiosLogin {
-  async function autenticarUsuario(data) {
+  async autenticarUsuario(data) {
     try {
       const response = await axios.post(`${BASE_URL.BASE_KEYCLOAK}`, {
         'grant_type' : 'password',
@@ -24,3 +24,5 @@ class AxiosLogin {
     }
   }
 }
+
+export default new AxiosLogin();
