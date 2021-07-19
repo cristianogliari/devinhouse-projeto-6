@@ -2,12 +2,11 @@ import { makeStyles } from "@material-ui/core";
 
 export const useStyles = makeStyles((theme) => ({
     brigthIcon: {
-        transform: "rotateZ(180deg)",
         width: theme.spacing(3.5),
         height: theme.spacing(3.5),
     },
     button: {
-        marginLeft: theme.spacing(7)
+        marginLeft: theme.spacing(1)
     },
 
     avatar: {

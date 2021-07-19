@@ -12,7 +12,8 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     divSearchBar: {
-        width:"50%",
+        width:"51%",
+        marginLeft: "auto",
     },
 
     divProfile: {
