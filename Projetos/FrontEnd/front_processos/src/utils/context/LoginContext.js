@@ -5,21 +5,18 @@ import { AxiosLogin } from "../axios/AxiosLogin";
 const LoginContext = createContext({});
 
 const LoginProvider = ({ children }) => {
-  const [login, setLogin] = useState({
-    state: "waiting",
-  });
+  const [login, setLogin] = useState({state: "waiting",});
 
   const logar = (payload) => {
-    setLogin({ payload, state: "ready" });
+    setLogin({ payload, state: "ready", });
   };
-  const conectar = async () => {
-    const resultado = await AxiosLogin.placholder();
+  const conectar = (data) => {
+    setLogin({state: "loading",});
+    const resultado = AxiosLogin.autenticarUsuario(data);
     logar(resultado);
   };
   const desconectar = () => {
-    setLogin({
-      state: "waiting",
-    });
+    setLogin({state: "waiting",});
   };
 
   return (
