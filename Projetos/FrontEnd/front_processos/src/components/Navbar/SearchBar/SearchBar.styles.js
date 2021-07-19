@@ -6,5 +6,9 @@ export const useStyles = makeStyles((theme) => ({
        backgroundColor: "white",
        borderRadius: "5px",
        marginLeft: theme.spacing(5)
+    },
+
+    searchBarPlaceHoldeColor: {
+        color: "black"
     }
 }))
