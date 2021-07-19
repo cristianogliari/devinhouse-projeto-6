@@ -11,6 +11,7 @@ import { useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
+import { useLoginContext } from "../../utils/context/LoginContext";
 import { useStyle } from "./FormLogin.styles";
 
 const validacaoSchema = yup.object({
@@ -28,6 +29,8 @@ const validacaoSchema = yup.object({
 
 export function FormLogin() {
   const [showPassword, setshowPassword] = useState(true);
+  const { conectar } = useLoginContext();
+  const classes = useStyle();
 
   const handleShowPassword = () => {
     setshowPassword((prev) => !prev);
@@ -40,13 +43,13 @@ export function FormLogin() {
     },
     validationSchema: validacaoSchema,
     onSubmit: (value) => {
-      console.log({
+      conectar({
         username: value.username,
         password: value.password,
       });
     },
   });
-  const classes = useStyle();
+  
   return (
     <Paper elevation= {3} className={classes.paperForm}>
       <Typography className={classes.titulo}>
