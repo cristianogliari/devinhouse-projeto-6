@@ -6,9 +6,7 @@ import { useState } from "react";
 
 const skeleton = false;
 
-const processo = {interessado:"teste",ano:"2000",descricao:"Loren"};
 export const Home = () => {
-
   const [openModal, setOpenModal] = useState(false);
 
   const handleModalState = () => {
@@ -22,7 +20,6 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <h1>Homepage (Cristian apagar esse h1)</h1>
       {skeleton ? (
         <Skeleton
           width="50%"
@@ -38,7 +35,6 @@ export const Home = () => {
       <ModalFormulario 
       openModal={openModal}
       handleModalState={handleModalState}
-      processo={processo}
       />
     </>
   );

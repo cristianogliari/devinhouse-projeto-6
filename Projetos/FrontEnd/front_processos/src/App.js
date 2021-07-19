@@ -1,24 +1,20 @@
-import { CssBaseline, ThemeProvider } from '@material-ui/core'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 
-import { Routes } from './routes';
+import { Routes } from "./routes";
+import { Home } from "./pages";
 
-import { Home } from './pages';
+import { CustomThemeProvider } from "./utils/context/themeContext";
 
 function App() {
+
   return (
-    <ThemeProvider>
-    {/* <ThemeProvider theme={theme}> */}
-
-      <CssBaseline />
-
+    <CustomThemeProvider>
       <BrowserRouter>
         <Routes>
           <Home />
         </Routes>
       </BrowserRouter>
-
-    </ThemeProvider>
+    </CustomThemeProvider>
   );
 }
 

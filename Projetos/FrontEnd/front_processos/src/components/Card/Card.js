@@ -110,7 +110,7 @@ export const ProcessoCard = (props) => {
                   >
                     <CreateIcon
                       fontSize="small"
-                      style={{ color: "#666666", padding: "0" }}
+                      style={{ padding: "0" }}
                     />
                   </IconButton>
 
@@ -121,7 +121,7 @@ export const ProcessoCard = (props) => {
                   >
                     <DeleteIcon
                       fontSize="small"
-                      style={{ color: "#666666", padding: "0" }}
+                      style={{ padding: "0" }}
                     />
                   </IconButton>
 

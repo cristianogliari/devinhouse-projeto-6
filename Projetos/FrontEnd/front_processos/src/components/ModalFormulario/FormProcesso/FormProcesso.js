@@ -12,8 +12,7 @@ const validacaoSchema = yup.object({
     .required("Interessado é obrigatorio!"),
   anoDoProcesso: yup
     .string("Digite um ano")
-    .min(4, "Digite um ano valido!")
-    .max(4, "Digite um ano valido")
+    .length(4, "Digite um ano valido!")
     .required("Ano é obrigatorio!"),
   descricaoProcesso: yup
     .string("Digite uma descrição")
