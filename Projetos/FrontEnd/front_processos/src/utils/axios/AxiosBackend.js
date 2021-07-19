@@ -7,7 +7,7 @@ class BackendApi {
     this.access_token = access_token;
   }
 
-  async function cadastrarProcesso(data) {
+  async cadastrarProcesso(data) {
     try {
       const response = await axios.post(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/cadastrar`, data, {
         headers: {
@@ -16,15 +16,76 @@ class BackendApi {
           'access_token' : this.access_token
         }    
       })
+
+      return response;
     }
     catch (error) {
       console.log(error);
     }
   }
 
-  async function consultarTodosOsAssuntos() {
+  async consultarTodosOsProcessos() {
     try {
-      const response = await axios.
+      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar`, {
+        headers: {
+          'Content-Type' : 'application/json',
+          'api-version' : 'v1',
+          'access_token' : this.access_token
+        }    
+      })
+    
+      return response;
+    }
+    catch (error) {
+      console.log(error);
+    }
+  }
+
+  async consultaProcessoPorId(data) {
+    try {
+      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar/id/${data.id}`, {
+        headers: {
+          'Content-Type' : 'application/json',
+          'api-version' : 'v1',
+          'access_token' : this.access_token
+        }    
+      })
+
+      return response;
+    }
+    catch (error) {
+      console.log(error);
+    }
+  }
+
+  async consultaProcessoPorChaveProcesso(data) {
+    try {
+      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar/chaveprocesso?value=${data}`, {
+        headers: {
+          'Content-Type' : 'application/json',
+          'api-version' : 'v1',
+          'access_token' : this.access_token
+        }    
+      })
+
+      return response;
+    }
+    catch (error) {
+      console.log(error);
+    }
+  }
+
+  async consultaPrcocessoPorAssunto(data) {
+    try {
+      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar/assunto/id/${data.assunto.id}`, {
+        headers: {
+          'Content-Type' : 'application/json',
+          'api-version' : 'v1',
+          'access_token' : this.access_token
+        }    
+      })
+
+      return response;
     }
     catch (error) {
       console.log(error);
@@ -32,9 +93,17 @@ class BackendApi {
 
   }
 
-  async function consultaProcessoPorId() {
+  async atualizaProcessoPorId(data) {
     try {
-      const response = await axios.
+      const response = await axios.put(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/atualizar/id/${data.id}`, data, {
+        headers: {
+          'Content-Type' : 'application/json',
+          'api-version' : 'v1',
+          'access_token' : this.access_token
+        }    
+      })
+
+      return response;
     }
     catch (error) {
       console.log(error);
@@ -42,9 +111,17 @@ class BackendApi {
 
   }
 
-  async function consultaProcessoPorChaveProcesso() {
+  async removerProcessoPorId(data) {
     try {
-      const response = await axios.
+      const response = await axios.delete(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/remover/id/${data.id}`, {
+        headers: {
+          'Content-Type' : 'application/json',
+          'api-version' : 'v1',
+          'access_token' : this.access_token
+        }    
+      })
+
+      return response;
     }
     catch (error) {
       console.log(error);
@@ -52,33 +129,37 @@ class BackendApi {
 
   }
 
-  async function consultaPrcocessoPorAssunto() {
+  async consultarTodosOsAssuntos() {
     try {
-      const response = await axios.
+      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/assuntos/v1/buscar`, {
+        headers: {
+          'Content-Type' : 'application/json',
+          'api-version' : 'v1',
+          'access_token' : this.access_token
+        }    
+      })
+    
+      return response;
     }
     catch (error) {
       console.log(error);
     }
-
   }
 
-  async function atualizaProcessoPorId(data) {
+  async consultarTodosOsInteressados() {
     try {
-      const response = await axios.
+      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/interessados/v1/buscar`, {
+        headers: {
+          'Content-Type' : 'application/json',
+          'api-version' : 'v1',
+          'access_token' : this.access_token
+        }    
+      })
+    
+      return response;
     }
     catch (error) {
       console.log(error);
     }
-
-  }
-
-  async function removerProcessoPorId(data) {
-    try {
-      const response = await axios.
-    }
-    catch (error) {
-      console.log(error);
-    }
-
   }
 }
