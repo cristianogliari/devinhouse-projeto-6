@@ -4,6 +4,8 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,6 +29,13 @@ public class InteressadoController {
 	@ResponseStatus(HttpStatus.CREATED)
 	public Interessado cadastrarInteressadoController(@RequestBody Interessado interessado) {
 		return service.cadastrarInteressado(interessado);
+	}
+	
+//	Busca todos os interessados
+	@RequestMapping(value = "/buscar", method = GET, produces = APPLICATION_JSON_VALUE)
+	@ResponseStatus(HttpStatus.OK)
+	public List<Interessado> buscarTodosOsInteressados() {
+		return service.buscarTodosOsInteressados();
 	}
 	
 //	10 - Deverá haver um endpoint para buscar um interessado baseado na sua identificação única (ID);
