@@ -17,10 +17,13 @@ export function SearchBar() {
         endAdornment: (
           <InputAdornment position="end">
             <IconButton>
-              <SearchIcon />
+              <SearchIcon style={{color: "black"}}/>
             </IconButton>
           </InputAdornment>
         ),
+        classes: {
+          input: classes.searchBarPlaceHoldeColor
+        }
       }}
       InputLabelProps={{
         shrink: false,
