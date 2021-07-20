@@ -8,12 +8,19 @@ import {
   ClickAwayListener
 } from "@material-ui/core";
 
+import { useKeycloak } from "@react-keycloak/web";
+
 import { useStyles } from "./ProfileCard.styles";
 
 export function ProfileCard(props) {
   const classes = useStyles();
-
+  const { keycloak } = useKeycloak();
   const {clickAwayEvent} = props;
+
+  const handleLogout = () => {
+    keycloak.logout();
+    localStorage.removeItem("keycloak-token");
+  }
 
   return (
     <ClickAwayListener onClickAway={clickAwayEvent}>
@@ -31,7 +38,7 @@ export function ProfileCard(props) {
         </div>
         <Divider className={classes.divider} />
         <div className={classes.divButton}>
-          <Button>Sair</Button>
+          <Button onClick={handleLogout}>Sair</Button>
         </div>
       </Card>
     </ClickAwayListener>
