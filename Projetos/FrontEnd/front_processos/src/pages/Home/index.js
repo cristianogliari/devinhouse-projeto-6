@@ -66,7 +66,7 @@ export const Home = () => {
 
       </Paper>
       
-      <AddProcessButton />
+      <AddProcessButton openModalCadastro={handleModalState}/>
 
       <ModalFormulario 
       openModal={openModal}

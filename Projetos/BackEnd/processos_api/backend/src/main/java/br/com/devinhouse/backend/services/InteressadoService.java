@@ -35,6 +35,10 @@ public class InteressadoService {
 			throw new RuntimeException("CPF ja possui cadastro.");
 		}
 	};
+	
+	public List<Interessado> buscarTodosOsInteressados() {
+		return repository.findAll();
+	}
 
 	public Interessado buscarInteressadoPeloId(Integer id) {
 		Interessado encontrado = repository.findById(id).get();

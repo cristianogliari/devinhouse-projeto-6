@@ -50,6 +50,16 @@ public class InteressadoServiceTest {
 	}
 	
 	@Test
+	void buscarTodosOsInteressados() {
+		//given
+		//when
+		interessadoService.buscarTodosOsInteressados();
+		
+		//then
+		verify(interessadoRepository).findAll();
+	}
+	
+	@Test
 	void buscarInteressadoPeloIdTest() {
 		// given
 		int expected = 1;
