@@ -21,7 +21,16 @@ export function ModalFormulario(props) {
           <FormProcesso
             handleModal={handleModalState}
             formType="cadastro"
-            processoDados={{ interessado: "", ano: "", descricao: "" }}
+            processoDados={
+              { 
+                nuano: "",
+                descricao: "",
+                nuprocesso:"",
+                chaveprocesso: "",
+                sgorgaosetor: "",
+                cdinteressado: {id:0},
+                cdassunto: {id:0},
+              }}
           />
         ) : (
           <FormProcesso

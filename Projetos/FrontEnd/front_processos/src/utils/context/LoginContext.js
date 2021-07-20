@@ -8,7 +8,11 @@ const LoginProvider = ({ children }) => {
   const [login, setLogin] = useState({state: "waiting",});
 
   const logar = (payload) => {
-    setLogin({ payload, state: "ready", });
+    setLogin({payload, state:"skeleton"})
+    //AxiosBackend. listaProcesso 
+    //AxiosBackend. listaInteressado
+    //AxiosBackend. listaAssunto
+    //setLogin({ payload, listaProcesso, listaAssunto, listaInteressado, state: "ready", });
   };
   const conectar = (data) => {
     setLogin({state: "loading",});

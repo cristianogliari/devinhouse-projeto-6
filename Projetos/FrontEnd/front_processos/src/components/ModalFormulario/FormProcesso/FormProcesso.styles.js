@@ -30,8 +30,8 @@ export const useStyle = makeStyles((theme) => ({
   descricaoMargin: {
     margin: 10,
   },
-  maxWidthMargin: {
+  widthMargin: {
     margin: 10,
-    maxWidth: 300,
+    width: 170,
   },
 }));
