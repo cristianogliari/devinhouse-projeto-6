@@ -5,11 +5,6 @@ import * as yup from "yup";
 import { useStyle } from "./FormProcesso.styles";
 
 const validacaoSchema = yup.object({
-  nomeInteressado: yup
-    .string("Digite seu nome")
-    .strict()
-    .trim("Remova os espaços no inicio e fim!")
-    .required("Interessado é obrigatorio!"),
   anoDoProcesso: yup
     .string("Digite um ano")
     .length(4, "Digite um ano valido!")
@@ -19,6 +14,22 @@ const validacaoSchema = yup.object({
     .strict()
     .trim("Remova os espaços no inicio e fim!")
     .required("Descrição é obrigatorio!"),
+  orgaoSetor: yup
+    .string("Digite um Orgão")
+    .strict()
+    .trim("Remova os espaços no inicio e fim!")
+    .length(4, "Digite 4 caracteres para o Orgão!")
+    .required("Orgão é obrigatorio!"),
+  codigoInteressado: yup
+    .string("Escolha uma opção!")
+    .strict()
+    .min(1, "Escolha uma opção!")
+    .required("Interessado é obrigatorio!"),
+  codigoAssunto: yup
+    .string("Escolha uma opção!")
+    .strict()
+    .min(1, "Escolha uma opção!")
+    .required("Interessado é obrigatorio!"),
 });
 
 export function FormProcesso(props) {
@@ -26,9 +37,13 @@ export function FormProcesso(props) {
   const classes = useStyle();
   const formik = useFormik({
     initialValues: {
-      nomeInteressado: processoDados.interessado,
-      anoDoProcesso: processoDados.ano,
+      anoDoProcesso: processoDados.nuano,
       descricaoProcesso: processoDados.descricao,
+      orgaoSetor: processoDados.sgorgaosetor,
+      numeroProcesso: processoDados.nuprocesso,
+      chaveDeProcesso: processoDados.chaveprocesso,
+      codigoInteressado: processoDados.cdinteressado,
+      codigoAssunto: processoDados.cdassunto,
     },
     validationSchema: validacaoSchema,
     onSubmit: (value) => {
@@ -63,26 +78,29 @@ export function FormProcesso(props) {
               fullWidth
               disabled
               variant="outlined"
-              id="Placeholder"
-              name="Placeholder"
+              id="numeroProcesso"
+              name="numeroProcesso"
               label="Numero Processo"
+              value={formik.values.numeroProcesso}
             />
           )}
           <TextField
             className={classes.maxWidthMargin}
             fullWidth
+            select
             variant="outlined"
             id="nomeInteressado"
             name="nomeInteressado"
             label="Interessado"
-            value={formik.values.nomeInteressado}
+            value={formik.values.codigoInteressado}
             onChange={formik.handleChange}
             error={
-              formik.touched.nomeInteressado &&
-              Boolean(formik.errors.nomeInteressado)
+              formik.touched.codigoInteressado &&
+              Boolean(formik.errors.codigoInteressado)
             }
             helperText={
-              formik.touched.nomeInteressado && formik.errors.nomeInteressado
+              formik.touched.codigoInteressado &&
+              formik.errors.codigoInteressado
             }
           />
           <TextField
@@ -92,13 +110,22 @@ export function FormProcesso(props) {
             id="Placeholder"
             name="Placeholder"
             label="Assunto"
+            value={formik.values.codigoAssunto}
+            onChange={formik.handleChange}
+            error={
+              formik.touched.codigoAssunto &&
+              Boolean(formik.errors.codigoAssunto)
+            }
+            helperText={
+              formik.touched.codigoAssunto && formik.errors.codigoAssunto
+            }
           />
         </div>
         <div className={classes.formLinha}>
           <TextField
             className={classes.maxWidthMargin}
             fullWidth
-            disabled={formType==="editar"}
+            disabled={formType === "editar"}
             variant="outlined"
             id="anoDoProcesso"
             name="anoDoProcesso"
@@ -116,25 +143,31 @@ export function FormProcesso(props) {
           <TextField
             className={classes.maxWidthMargin}
             fullWidth
-            disabled={formType==="editar"}
+            disabled={formType === "editar"}
             variant="outlined"
-            id="Placeholder"
-            name="Placeholder"
+            id="orgaoSetor"
+            name="orgaoSetor"
             label="Orgao"
+            value={formik.values.orgaoSetor}
+            onChange={formik.handleChange}
+            error={
+              formik.touched.orgaoSetor && Boolean(formik.errors.orgaoSetor)
+            }
+            helperText={formik.touched.orgaoSetor && formik.errors.orgaoSetor}
           />
-          {formType === "cadastro" ? 
+          {formType === "cadastro" ? (
             <></>
-           : 
+          ) : (
             <TextField
               className={classes.maxWidthMargin}
               fullWidth
               disabled
               variant="outlined"
-              id="Placeholder"
-              name="Placeholder"
+              id="chaveDeProcesso"
+              name="chaveDeProcesso"
               label="Chave Processo"
             />
-          }
+          )}
         </div>
         <TextField
           className={classes.descricaoMargin}
