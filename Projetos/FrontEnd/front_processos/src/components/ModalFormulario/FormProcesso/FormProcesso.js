@@ -2,7 +2,7 @@ import { Typography, TextField, Button, Paper, MenuItem } from "@material-ui/cor
 import { useFormik } from "formik";
 import * as yup from "yup";
 
-import { useLoginContext } from "../../../utils/context/LoginContext";
+import { useDataContext } from "../../../utils/context/DataContext";
 import { useStyle } from "./FormProcesso.styles";
 
 const validacaoSchema = yup.object({
@@ -33,7 +33,7 @@ const validacaoSchema = yup.object({
 
 export function FormProcesso(props) {
   const { formType, processoDados, handleModal } = props;
-  const { login: {listaAssunto, listaInteressado}} = useLoginContext();
+  const { data: {listaAssunto, listaInteressado}} = useDataContext();
   const classes = useStyle();
   const formik = useFormik({
     initialValues: {
