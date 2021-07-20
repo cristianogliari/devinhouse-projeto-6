@@ -14,7 +14,6 @@ export const AddProcessButton = (props) => {
       style={{ padding: '40px' }} 
       onClick={openModalCadastro}
       >
-        
         <AddIcon fontSize="large" />
     </Fab>
   )
