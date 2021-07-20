@@ -42,10 +42,15 @@ export const Home = () => {
       >
         {loading ? (
           <Skeleton
-            width="80%"
+            width="90%"
             height="181px"
             animation="wave"
-            style={{ margin: "auto", borderRadius: "10px" }}
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              //marginBottom: "20px",
+              borderRadius: "5px",
+            }}
           />
         ) : (
           <ProcessoCard handleEdit={handleEdit} />
@@ -53,10 +58,15 @@ export const Home = () => {
 
         {loading ? (
           <Skeleton
-            width="80%"
+            width="90%"
             height="181px"
             animation="wave"
-            style={{ margin: "auto", borderRadius: "10px" }}
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              //marginBottom: "20px",
+              borderRadius: "5px",
+            }}
           />
         ) : (
           <ProcessoCard handleEdit={handleEdit} />
@@ -64,10 +74,15 @@ export const Home = () => {
 
         {loading ? (
           <Skeleton
-            width="80%"
+            width="90%"
             height="181px"
             animation="wave"
-            style={{ margin: "auto", borderRadius: "10px" }}
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              //marginBottom: "20px",
+              borderRadius: "5px",
+            }}
           />
         ) : (
           <ProcessoCard handleEdit={handleEdit} />
