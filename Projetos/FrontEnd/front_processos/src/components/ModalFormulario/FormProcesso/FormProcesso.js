@@ -1,7 +1,8 @@
-import { Typography, TextField, Button, Paper } from "@material-ui/core";
+import { Typography, TextField, Button, Paper, MenuItem } from "@material-ui/core";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
+import { useLoginContext } from "../../../utils/context/LoginContext";
 import { useStyle } from "./FormProcesso.styles";
 
 const validacaoSchema = yup.object({
@@ -21,19 +22,18 @@ const validacaoSchema = yup.object({
     .length(4, "Digite 4 caracteres para o Orgão!")
     .required("Orgão é obrigatorio!"),
   codigoInteressado: yup
-    .string("Escolha uma opção!")
-    .strict()
-    .min(1, "Escolha uma opção!")
+    .number("Escolha uma opção!")
+    .moreThan(0, "Escolha uma opção!")
     .required("Interessado é obrigatorio!"),
   codigoAssunto: yup
-    .string("Escolha uma opção!")
-    .strict()
-    .min(1, "Escolha uma opção!")
-    .required("Interessado é obrigatorio!"),
+    .number("Escolha uma opção!")
+    .moreThan(0, "Escolha uma opção!")
+    .required("Assunto é obrigatorio!"),
 });
 
 export function FormProcesso(props) {
   const { formType, processoDados, handleModal } = props;
+  const { login: {listaAssunto, listaInteressado}} = useLoginContext();
   const classes = useStyle();
   const formik = useFormik({
     initialValues: {
@@ -42,8 +42,8 @@ export function FormProcesso(props) {
       orgaoSetor: processoDados.sgorgaosetor,
       numeroProcesso: processoDados.nuprocesso,
       chaveDeProcesso: processoDados.chaveprocesso,
-      codigoInteressado: processoDados.cdinteressado,
-      codigoAssunto: processoDados.cdassunto,
+      codigoInteressado: processoDados.cdinteressado.id,
+      codigoAssunto: processoDados.cdassunto.id,
     },
     validationSchema: validacaoSchema,
     onSubmit: (value) => {
@@ -74,7 +74,7 @@ export function FormProcesso(props) {
             <></>
           ) : (
             <TextField
-              className={classes.maxWidthMargin}
+              className={classes.widthMargin}
               fullWidth
               disabled
               variant="outlined"
@@ -85,12 +85,12 @@ export function FormProcesso(props) {
             />
           )}
           <TextField
-            className={classes.maxWidthMargin}
+            className={classes.widthMargin}
             fullWidth
             select
             variant="outlined"
-            id="nomeInteressado"
-            name="nomeInteressado"
+            id="codigoInteressado"
+            name="codigoInteressado"
             label="Interessado"
             value={formik.values.codigoInteressado}
             onChange={formik.handleChange}
@@ -102,13 +102,25 @@ export function FormProcesso(props) {
               formik.touched.codigoInteressado &&
               formik.errors.codigoInteressado
             }
-          />
+          >
+            <MenuItem key={0} value={0}>
+              Selecione
+            </MenuItem>
+            {/* {
+              listaAssunto.map((interessado) => (
+                <MenuItem key={interessado.id} value={interessado.id}>
+                  {interessado.descricao}
+                </MenuItem>
+              ))
+            } */}
+          </TextField>
           <TextField
-            className={classes.maxWidthMargin}
+            className={classes.widthMargin}
             fullWidth
+            select
             variant="outlined"
-            id="Placeholder"
-            name="Placeholder"
+            id="codigoAssunto"
+            name="codigoAssunto"
             label="Assunto"
             value={formik.values.codigoAssunto}
             onChange={formik.handleChange}
@@ -119,11 +131,22 @@ export function FormProcesso(props) {
             helperText={
               formik.touched.codigoAssunto && formik.errors.codigoAssunto
             }
-          />
+          >
+            <MenuItem key={0} value={0}>
+              Selecione
+            </MenuItem>
+            {/* {
+              listaAssunto.map((assunto) => (
+                <MenuItem key={assunto.id} value={assunto.id}>
+                  {assunto.descricao}
+                </MenuItem>
+              ))
+            } */}
+          </TextField>
         </div>
         <div className={classes.formLinha}>
           <TextField
-            className={classes.maxWidthMargin}
+            className={classes.widthMargin}
             fullWidth
             disabled={formType === "editar"}
             variant="outlined"
@@ -141,7 +164,7 @@ export function FormProcesso(props) {
             }
           />
           <TextField
-            className={classes.maxWidthMargin}
+            className={classes.widthMargin}
             fullWidth
             disabled={formType === "editar"}
             variant="outlined"
@@ -159,7 +182,7 @@ export function FormProcesso(props) {
             <></>
           ) : (
             <TextField
-              className={classes.maxWidthMargin}
+              className={classes.widthMargin}
               fullWidth
               disabled
               variant="outlined"
@@ -190,7 +213,7 @@ export function FormProcesso(props) {
         />
         <div className={classes.botaoFim}>
           <Button
-            className={classes.maxWidthMargin}
+            className={classes.widthMargin}
             color="primary"
             variant="contained"
             fullWidth

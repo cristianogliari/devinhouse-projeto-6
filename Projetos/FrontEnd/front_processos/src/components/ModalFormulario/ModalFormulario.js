@@ -28,8 +28,8 @@ export function ModalFormulario(props) {
                 nuprocesso:"",
                 chaveprocesso: "",
                 sgorgaosetor: "",
-                cdinteressado: "",
-                cdassunto: "",
+                cdinteressado: {id:0},
+                cdassunto: {id:0},
               }}
           />
         ) : (
