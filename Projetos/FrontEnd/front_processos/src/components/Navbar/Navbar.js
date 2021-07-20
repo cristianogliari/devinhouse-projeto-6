@@ -12,6 +12,7 @@ const loginStatus = true;
 
 export function Navbar() {
   const classes = useStyles();
+  const avatar = "https://i.pravatar.cc/300";
 
   const [abreInfoPerfil, setInfoPerfil] = useState(false);
 
@@ -39,14 +40,18 @@ export function Navbar() {
                 <SearchBar />
               </div>
               <div className={classes.divAvatarArea}>
-                <AvatarArea handleChangeInfoPerfil={handleChangeInfoPerfil} />
+                <AvatarArea 
+                  handleChangeInfoPerfil={handleChangeInfoPerfil}
+                  avatar={avatar} />
               </div>
             </>
           )}
         </Toolbar>
         {abreInfoPerfil === true && (
           <div className={classes.divProfile}>
-            <ProfileCard clickAwayEvent={handleClickAway} />
+            <ProfileCard 
+              clickAwayEvent={handleClickAway}
+              avatar={avatar} />
           </div>
         )}
       </AppBar>

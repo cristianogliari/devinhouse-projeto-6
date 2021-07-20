@@ -15,7 +15,7 @@ import { useStyles } from "./ProfileCard.styles";
 export function ProfileCard(props) {
   const classes = useStyles();
   const { keycloak } = useKeycloak();
-  const {clickAwayEvent} = props;
+  const {clickAwayEvent, avatar} = props;
 
   const handleLogout = () => {
     keycloak.logout();
@@ -30,7 +30,7 @@ export function ProfileCard(props) {
             avatar={
               <Avatar
                 className={classes.avatar}
-                src="https://i.pravatar.cc/300"
+                src={avatar}
               />
             }
           />
