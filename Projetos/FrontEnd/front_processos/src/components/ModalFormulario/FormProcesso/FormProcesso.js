@@ -106,13 +106,13 @@ export function FormProcesso(props) {
             <MenuItem key={0} value={0}>
               Selecione
             </MenuItem>
-            {/* {
+            {
               listaAssunto.map((interessado) => (
                 <MenuItem key={interessado.id} value={interessado.id}>
                   {interessado.descricao}
                 </MenuItem>
               ))
-            } */}
+            }
           </TextField>
           <TextField
             className={classes.widthMargin}
@@ -135,13 +135,13 @@ export function FormProcesso(props) {
             <MenuItem key={0} value={0}>
               Selecione
             </MenuItem>
-            {/* {
+            {
               listaAssunto.map((assunto) => (
                 <MenuItem key={assunto.id} value={assunto.id}>
                   {assunto.descricao}
                 </MenuItem>
               ))
-            } */}
+            }
           </TextField>
         </div>
         <div className={classes.formLinha}>
