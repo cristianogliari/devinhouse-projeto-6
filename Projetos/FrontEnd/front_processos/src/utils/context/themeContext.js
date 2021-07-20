@@ -28,7 +28,7 @@ const CustomThemeProvider = ({ children }) => {
   }, [darkMode]);
 
   return (
-    <ContextTheme.Provider value={{ changeTheme }}>
+    <ContextTheme.Provider value={{ changeTheme, darkMode }}>
       <ThemeProvider theme={theme}>
         <CssBaseline /> 
         {children}

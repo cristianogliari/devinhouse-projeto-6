@@ -6,10 +6,6 @@ export const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(1)
     },
 
-    logo: {
-        color: "black"
-    },
-
     icone: {
         height: '100%'
     },

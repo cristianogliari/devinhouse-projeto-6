@@ -1,5 +1,4 @@
 import { createTheme } from "@material-ui/core";
-import { deepPurple, indigo, lightBlue, pink } from '@material-ui/core/colors'
 
 export const getTheme = (themeMode) =>
   createTheme({
@@ -9,15 +8,20 @@ export const getTheme = (themeMode) =>
 const darkTheme = createTheme({
   palette: {
     type: "dark",
-    primary: pink,
-    secondary: deepPurple,
+    primary: {
+      main: "#35067a",
+    },
+    background: {
+      default: "#2c2c2c"
+    } 
   },
 });
 
 const lightTheme = createTheme({
   palette: {
     type: "light",
-    primary: indigo,
-    secondary: lightBlue,
+    primary: {
+      main: "#5C5CFF"
+    },
   },
 });
