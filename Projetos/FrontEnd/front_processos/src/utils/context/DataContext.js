@@ -5,7 +5,7 @@ import AxiosLogin from "../axios/AxiosLogin";
 const DataContext = createContext({});
 
 const DataProvider = ({ children }) => {
-  const [data, setData] = useState({state: "waiting",});
+  const [data, setData] = useState({state: "",});
 
   const carregarData = (payload) => {
     setData({payload, state: "loading",});
