@@ -1,4 +1,5 @@
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import { Paper } from "@material-ui/core";
 import Skeleton from "@material-ui/lab/Skeleton";
 
@@ -6,11 +7,17 @@ import { Navbar } from "../../components/Navbar";
 import { ModalFormulario } from "../../components/ModalFormulario";
 import { ProcessoCard } from "../../components/Card";
 import { AddProcessButton } from "../../components/AddButton/AddButton";
-import { useDataContext } from "../../../utils/context/DataContext";
+import { useDataContext } from "../../utils/context/DataContext";
 
 export const Home = () => {
   const skeletonItens = [1, 2, 3];
+  
   const [openModal, setOpenModal] = useState(false);
+  
+  const { data:{state}} = useDataContext();
+
+  const [loading] = useState(state);
+
   const {
     data: { listaProcesso },
   } = useDataContext();
@@ -32,21 +39,18 @@ export const Home = () => {
           paddingBottom: "10px",
         }}
       >
-        {skeleton ? (
-          skeletonItens.forEach((skeletonItens) =>(
-            <Skeleton
-              ket={skeletonItens}
-              width="50%"
-              height="181px"
-              animation="wave"
-              style={{ margin: "auto", borderRadius: "10px" }}
-            />
-          ))
-        ) : (
-          listaProcesso.map((processo) => (
-            <ProcessoCard key={processo.id} processo={processo} />
-          ))
-        )}
+        {loading === "skeleton" ? skeletonItens.forEach((skeletonItens) => (
+              <Skeleton
+                ket={skeletonItens}
+                width="50%"
+                height="181px"
+                animation="wave"
+                style={{ margin: "auto", borderRadius: "10px" }}
+              />
+            ))
+          : listaProcesso?.map((processo) => (
+              <ProcessoCard key={processo.id} processo={processo} />
+            ))}
       </Paper>
 
       <AddProcessButton openModalCadastro={handleModalState} />
