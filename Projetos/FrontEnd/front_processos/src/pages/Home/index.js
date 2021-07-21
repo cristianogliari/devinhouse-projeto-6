@@ -7,25 +7,18 @@ import { Navbar } from "../../components/Navbar";
 import { ModalFormulario } from "../../components/ModalFormulario";
 import { ProcessoCard } from "../../components/Card";
 import { AddProcessButton } from "../../components/AddButton/AddButton";
-
-export const Home = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const [loading, setLoading] = useState(false);
+  
+  export const Home = () => {
+    const skeletonItens = [1, 2, 3];
+    const [openModal, setOpenModal] = useState(false);
+    const [loading, setLoading] = useState(false);
+  const {
+    data: { listaProcesso },
+  } = useDataContext();
 
   const handleModalState = () => {
     setOpenModal((prev) => !prev);
   };
-
-  const handleEdit = () => {
-    setOpenModal(true);
-  };
-
-  useEffect(() => {
-    /* fetchProducts().then((state) => {
-      setProducts(state);
-      setLoading(!loading);
-    }); */
-  }, []);
 
   return (
     <>
@@ -40,52 +33,20 @@ export const Home = () => {
           paddingBottom: "10px",
         }}
       >
-        {loading ? (
-          <Skeleton
-            width="90%"
-            height="181px"
-            animation="wave"
-            style={{
-              marginLeft: "auto",
-              marginRight: "auto",
-              //marginBottom: "20px",
-              borderRadius: "5px",
-            }}
-          />
+        {skeleton ? (
+          skeletonItens.forEach((skeletonItens) =>(
+            <Skeleton
+              ket={skeletonItens}
+              width="50%"
+              height="181px"
+              animation="wave"
+              style={{ margin: "auto", borderRadius: "10px" }}
+            />
+          ))
         ) : (
-          <ProcessoCard handleEdit={handleEdit} />
-        )}
-
-        {loading ? (
-          <Skeleton
-            width="90%"
-            height="181px"
-            animation="wave"
-            style={{
-              marginLeft: "auto",
-              marginRight: "auto",
-              //marginBottom: "20px",
-              borderRadius: "5px",
-            }}
-          />
-        ) : (
-          <ProcessoCard handleEdit={handleEdit} />
-        )}
-
-        {loading ? (
-          <Skeleton
-            width="90%"
-            height="181px"
-            animation="wave"
-            style={{
-              marginLeft: "auto",
-              marginRight: "auto",
-              //marginBottom: "20px",
-              borderRadius: "5px",
-            }}
-          />
-        ) : (
-          <ProcessoCard handleEdit={handleEdit} />
+          listaProcesso.map((processo) => (
+            <ProcessoCard key={processo.id} processo={processo} />
+          ))
         )}
       </Paper>
 
