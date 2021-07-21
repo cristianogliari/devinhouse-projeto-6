@@ -1,14 +1,15 @@
+import { useState } from "react";
+import { Paper } from "@material-ui/core";
+import Skeleton from "@material-ui/lab/Skeleton";
+
 import { Navbar } from "../../components/Navbar";
 import { ModalFormulario } from "../../components/ModalFormulario";
 import { ProcessoCard } from "../../components/Card";
-import Skeleton from "@material-ui/lab/Skeleton";
-import { useState } from "react";
 import { AddProcessButton } from "../../components/AddButton/AddButton";
-import { Paper } from "@material-ui/core";
-
-const skeletonItens = [1, 2, 3];
+import { useDataContext } from "../../../utils/context/DataContext";
 
 export const Home = () => {
+  const skeletonItens = [1, 2, 3];
   const [openModal, setOpenModal] = useState(false);
   const {
     data: { listaProcesso },
@@ -17,7 +18,7 @@ export const Home = () => {
   const handleModalState = () => {
     setOpenModal((prev) => !prev);
   };
-  
+
   return (
     <>
       <Navbar />
