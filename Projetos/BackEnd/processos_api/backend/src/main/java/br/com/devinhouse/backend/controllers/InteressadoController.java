@@ -6,6 +6,8 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,6 +27,8 @@ public class InteressadoController {
 	private InteressadoService service;
 	
 //	9 - Deverá haver um endpoint para cadastro de um interessado;
+	
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/cadastrar", method = POST, consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
 	public Interessado cadastrarInteressadoController(@RequestBody Interessado interessado) {
@@ -32,6 +36,7 @@ public class InteressadoController {
 	}
 	
 //	Busca todos os interessados
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Interessado> buscarTodosOsInteressados() {
@@ -39,6 +44,7 @@ public class InteressadoController {
 	}
 	
 //	10 - Deverá haver um endpoint para buscar um interessado baseado na sua identificação única (ID);
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar/id/{id}", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Interessado buscarInteressadoPeloIdController(@PathVariable Integer id) {
@@ -46,6 +52,7 @@ public class InteressadoController {
 	}
 	
 //	11 - Deverá haver um endpoint para buscar um interessado baseado no documento de indentificação (NUIDENTIFICACAO);
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar/cpf/{cpf}", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Interessado buscarInteressadoPeloCpfController(@PathVariable String cpf) {
