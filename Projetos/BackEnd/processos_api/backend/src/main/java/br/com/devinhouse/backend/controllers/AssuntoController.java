@@ -6,6 +6,10 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -20,22 +24,28 @@ import br.com.devinhouse.backend.services.AssuntoService;
 @RestController
 @RequestMapping(value = "/assuntos/v1", headers = "api-version=v1")
 public class AssuntoController {
+	
+	private static final Logger LOGGER = LogManager.getLogger();
 
 	@Autowired
 	private AssuntoService service;
 
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/cadastrar", method = POST, consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
 	public Assunto cadastrarAssunto(@RequestBody Assunto assunto) {
 		return service.cadastrarAssunto(assunto);
 	}
 	
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Assunto> buscarTodosOsAssuntosController() {
+		LOGGER.info("Buscou todos os assuntos");
 		return service.buscarTodosOsAssuntos();
 	}
 	
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar/id/{id}", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Assunto buscarAssuntoPeloId(@PathVariable Integer id) {
