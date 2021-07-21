@@ -10,14 +10,14 @@ import { useStyles } from "./AvatarArea.styles";
 export function AvatarArea(props) {
   const classes = useStyles();
   const { changeTheme } = useCustomTheme();
-  const { handleChangeInfoPerfil, avatar } = props;
+  const { handleChangeInfoPerfil, avatar, nomeCompleto } = props;
   return (
     <>
       <Button className={classes.button} onClick={handleChangeInfoPerfil}>
         <Avatar 
           src={avatar}
           className={classes.avatar} />
-        Nome da pessoa
+        {nomeCompleto}
         <ExpandMoreIcon fontSize="small" />
       </Button>
       <IconButton onClick={changeTheme}>

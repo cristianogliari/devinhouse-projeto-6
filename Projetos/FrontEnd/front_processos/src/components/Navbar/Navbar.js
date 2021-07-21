@@ -8,11 +8,16 @@ import { LogoArea } from "./LogoArea";
 
 import { useStyles } from "./Navbar.styles";
 
+import { decodeTokenFunction } from "../../utils/jwtDecode/jwtDecode";
+
+import bezosFour from "../../assets/images/bezosFour.png";
+
 const loginStatus = true;
 
 export function Navbar() {
   const classes = useStyles();
-  const avatar = "https://i.pravatar.cc/300";
+  const userData = decodeTokenFunction();
+  const avatar = bezosFour;
 
   const [abreInfoPerfil, setInfoPerfil] = useState(false);
 
@@ -42,7 +47,8 @@ export function Navbar() {
               <div className={classes.divAvatarArea}>
                 <AvatarArea 
                   handleChangeInfoPerfil={handleChangeInfoPerfil}
-                  avatar={avatar} />
+                  avatar={avatar}
+                  nomeCompleto={userData.nomeCompleto} />
               </div>
             </>
           )}
@@ -51,7 +57,9 @@ export function Navbar() {
           <div className={classes.divProfile}>
             <ProfileCard 
               clickAwayEvent={handleClickAway}
-              avatar={avatar} />
+              avatar={avatar}
+              nomeCompleto={userData.nomeCompleto}
+              email={userData.email} />
           </div>
         )}
       </AppBar>
