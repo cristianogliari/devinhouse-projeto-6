@@ -2,6 +2,7 @@ import { Typography, TextField, Button, Paper, MenuItem } from "@material-ui/cor
 import { useFormik } from "formik";
 import * as yup from "yup";
 
+import BackendApi from "../../../utils/axios/AxiosBackend";
 import { useDataContext } from "../../../utils/context/DataContext";
 import { useStyle } from "./FormProcesso.styles";
 
@@ -48,17 +49,47 @@ export function FormProcesso(props) {
     validationSchema: validacaoSchema,
     onSubmit: (value) => {
       if (formType === "cadastro") {
-        console.log({
-          nomeInteressado: value.nomeInteressado,
-          anoDoProcesso: value.anoDoProcesso,
-          descricaoProcesso: value.descricaoProcesso,
-        });
+        BackendApi(localStorage.getItem("keycloak-token"))
+          .cadastrarProcesso({
+              "sgorgaosetor" : value.orgaoSetor,
+              "descricao" : value.descricaoProcesso,
+              "nuano" : value.anoDoProcesso,
+              "cdassunto" : {
+                  "id" : value.codigoAssunto
+              },
+              "cdinteressado" : {
+                  "id" : value.codigoInteressado
+              }})
+          .then((res => {console.log(res)}))
+          .catch((error) => alert(error));
+        
       } else {
-        console.log({
-          nomeInteressado: value.nomeInteressado,
-          anoDoProcesso: value.anoDoProcesso,
-          descricaoProcesso: value.descricaoProcesso,
-        });
+        BackendApi(localStorage.getItem("keycloak-token"))
+          .atualizaProcessoPorId(
+            {
+              "id": processoDados.id,
+              "nuprocesso": value.numeroProcesso,
+              "sgorgaosetor": value.orgaoSetor,
+              "nuano": value.anoDoProcesso,
+              "chaveprocesso": value.chaveDeProcesso,
+              "descricao": value.descricaoProcesso,
+              "cdassunto": {
+                "id": value.codigoAssunto,
+                "descricao": "Autorização para Corte de Árvores - Área Pública",
+                "dtcadastro": "2021-05-23",
+                "flativo": "S"
+              },
+              "cdinteressado": {
+                "id": value.codigoInteressado,
+                "nminteressado": "Fulano de Tal",
+                "nuidentificacao": "46200016003",
+                "dtnascimento": "2000-01-01",
+                "flativo": "S"
+              }
+            }
+            )
+          .then((res => {console.log(res)}))
+          .catch((error) => alert(error));
       }
       handleModal();
     },
