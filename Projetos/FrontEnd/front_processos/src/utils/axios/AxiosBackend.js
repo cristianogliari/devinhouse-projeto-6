@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { BASE_URL } from '../services/BASE_URL';
 
-class BackendApi {
+export default class BackendApi {
   constructor(access_token) {
     this.access_token = access_token;
   }

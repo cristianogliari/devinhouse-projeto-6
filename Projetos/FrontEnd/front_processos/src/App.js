@@ -6,7 +6,7 @@ import { Routes } from "./routes";
 import { Home } from "./pages";
 
 import { CustomThemeProvider } from "./utils/context/themeContext";
-import { LoginProvider } from "./utils/context/LoginContext";
+import { DataProvider } from "./utils/context/DataContext";
 import { useKeycloak } from "@react-keycloak/web";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   localStorage.setItem('keycloak-token', keycloak.token);
 
   return (
-    <LoginProvider>
+    <DataProvider>
       <CustomThemeProvider>
         <BrowserRouter>    
             {!initialized ? (
@@ -28,7 +28,7 @@ function App() {
             )}
         </BrowserRouter>
       </CustomThemeProvider>
-    </LoginProvider>
+    </DataProvider>
   );
 }
 
