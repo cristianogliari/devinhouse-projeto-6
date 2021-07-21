@@ -8,6 +8,8 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 import java.util.List;
 
+import javax.annotation.security.RolesAllowed;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +30,7 @@ public class ProcessoController {
 	private ProcessoService service;
 	
 	//	1 - Deverá haver um endpoint para criação de um processo;
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/cadastrar", method = POST, consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
 	public Processo criarProcesso(@RequestBody Processo obj) {
@@ -35,6 +38,7 @@ public class ProcessoController {
 	}
 	
 	//	2 - Deverá haver um endpoint para listagem de todos os processos, retornando todos os atributos de cada processo;
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Processo> buscarTodosOsProcessosController() {
@@ -42,6 +46,7 @@ public class ProcessoController {
 	}	
 	
 	//	3 - Deverá haver um endpoint para buscar um processo baseado na sua identificação única (ID);
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar/id/{id}", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Processo buscarProcessoPorIDController(@PathVariable Integer id) {
@@ -49,6 +54,7 @@ public class ProcessoController {
 	}
 		
 	//	4 - Deverá haver um endpoint para buscar um processo baseado no seu número de processo (CHAVEPROCESSO);
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar/chaveprocesso", produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Processo buscarProcessoPorChaveProcessoController(@RequestParam("value") String termo) {
@@ -56,6 +62,7 @@ public class ProcessoController {
 	}	
 	
 	//	5 - Deverá haver um endpoint para buscar um ou mais processos baseado em seu interessado (CDINTERESSADO);
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar/interessado/id/{interessado}", produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Processo> buscarProcessosPorInteressadosController(@PathVariable("interessado") Integer termo) {
@@ -63,6 +70,7 @@ public class ProcessoController {
 	}
 	
 	//	6 - Deverá haver um endpoint para buscar um ou mais processos baseado em seu assunto (CDASSUNTO);
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar/assunto/id/{assunto}", produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Processo> buscarProcessosPorAssuntoController(@PathVariable("assunto") Integer termo) {
@@ -70,6 +78,7 @@ public class ProcessoController {
 	}
 	
 	//	7 - Deverá haver um endpoint para atualização de todos os atributos de um processo baseado na sua identificação única (ID);
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/atualizar/id/{id}", method = PUT, consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Processo atualizarProcessoPorIDController(@PathVariable Integer id, @RequestBody Processo obj) {
@@ -77,6 +86,7 @@ public class ProcessoController {
 	}
 	
 	//	8 - Deverá haver um endpoint para exclusão de um processo baseado na sua identificação única (ID);
+	@RolesAllowed("user-role")
 	@RequestMapping(value = "/remover/id/{id}", method = DELETE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Processo> removerProcessoPorIDController(@PathVariable Integer id) {
