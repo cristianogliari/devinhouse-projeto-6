@@ -18,7 +18,8 @@ import DeleteIcon from "@material-ui/icons/Delete";
 
 import card_img from "../../assets/images/card_img.png";
 
-import BackendApi from "../axios/AxiosBackend";
+import {ModalFormulario} from "../ModalFormulario"
+import BackendApi from "../../utils/axios/AxiosBackend";
 import { useStyles } from "./Card.style";
 
 export const ProcessoCard = (props) => {

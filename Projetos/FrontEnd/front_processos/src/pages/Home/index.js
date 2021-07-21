@@ -14,7 +14,7 @@ export const Home = () => {
   
   const [openModal, setOpenModal] = useState(false);
   
-  const { data:{state}} = useDataContext();
+  const { data:{state}, carregarData} = useDataContext();
 
   const [loading] = useState(state);
 
@@ -25,6 +25,10 @@ export const Home = () => {
   const handleModalState = () => {
     setOpenModal((prev) => !prev);
   };
+
+  useEffect(() => {
+    carregarData();
+  }, []);
 
   return (
     <>

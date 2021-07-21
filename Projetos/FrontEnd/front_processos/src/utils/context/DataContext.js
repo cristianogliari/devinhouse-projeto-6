@@ -8,36 +8,40 @@ const DataProvider = ({ children }) => {
   const [data, setData] = useState({state: "",});
 
   const carregarData = (payload) => {
+    let listaInteressado;
+    let listaAssunto;
+    let listaProcesso;
     setData({payload, state: "loading",});
-    BackendApi(localStorage.getItem("keycloak-token"))
+    new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsInteressados() 
-      .then((res => {const listaInteressado = res}))
+      .then((res => {listaInteressado = res}))
       .catch((error) => alert(error));
-    BackendApi(localStorage.getItem("keycloak-token"))
+    new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsAssuntos() 
-      .then((res => {const listaAssunto = res}))
+      .then((res => {listaAssunto = res}))
       .catch((error) => alert(error));
-    setData({...state, listaInteressado, listaAssunto, state:"skeleton"})
-    BackendApi(localStorage.getItem("keycloak-token"))
+    setData({...data, listaInteressado, listaAssunto, state:"skeleton"})
+    new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsProcessos()
-      .then((res => {const listaProcesso = res}))
+      .then((res => {listaProcesso = res}))
       .catch((error) => alert(error));
-    setData({ ...state, listaProcesso, state: "ready", });
+    setData({ ...data, listaProcesso, state: "ready", });
   };
 
   const recarregarProcessos = () => {
-    setData({...state, state:"skeleton"})
+    let listaProcesso;
+    setData({...data, state:"skeleton"})
     BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsProcessos()
-      .then((res => {const listaProcesso = res}))
+      .then((res => {listaProcesso = res}))
       .catch((error) => alert(error));
-    setData({ ...state, listaProcesso, state: "ready", });
+    setData({ ...data, listaProcesso, state: "ready", });
   }
-  const conectar = (data) => {
+  /* const conectar = (data) => {
     AxiosLogin.autenticarUsuario(data)
       .then((res) => logar(res))
       .catch((error) => alert(error));
-  };
+  }; */
   const removerData = () => {
     setData({state: "waiting",});
   };
