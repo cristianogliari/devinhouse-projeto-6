@@ -1,12 +1,27 @@
 import jwt_decode from "jwt-decode";
 
-const token = localStorage.getItem('keycloak-token');
+export const decodeTokenFunction = () => {
+  const token = localStorage.getItem('keycloak-token');
 
-const decodeToken = jwt_decode(token);
+  let userDataObj;
 
-export const userData = {
-  'primeiroNome' : {},
-  'ultimoNome' : {},
-  'nomeCompleto' : {},
-  'email' : {}
-};
+  if(token === null) {
+    userDataObj = {
+      'primeiroNome' : '',
+      'ultimoNome' : '',
+      'nomeCompleto' : '',
+      'email' : ''
+    }
+  } else {
+    let decodeToken = jwt_decode(token);
+
+    userDataObj = {
+      'primeiroNome' : `${decodeToken.given_name}`,
+      'ultimoNome' : `${decodeToken.family_name}`,
+      'nomeCompleto' : `${decodeToken.given_name} ${decodeToken.family_name}`,
+      'email' : decodeToken.email    
+    }
+  }
+
+  return userDataObj;
+}
