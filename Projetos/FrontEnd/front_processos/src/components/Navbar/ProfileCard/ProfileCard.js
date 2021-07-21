@@ -15,7 +15,7 @@ import { useStyles } from "./ProfileCard.styles";
 export function ProfileCard(props) {
   const classes = useStyles();
   const { keycloak } = useKeycloak();
-  const {clickAwayEvent, avatar} = props;
+  const { clickAwayEvent, avatar, nomeCompleto, email } = props;
 
   const handleLogout = () => {
     keycloak.logout();
@@ -34,7 +34,8 @@ export function ProfileCard(props) {
               />
             }
           />
-          <Typography>Nome da Pessoa</Typography>
+          <Typography>{nomeCompleto}</Typography>
+          <Typography>{email}</Typography>
         </div>
         <Divider className={classes.divider} />
         <div className={classes.divButton}>
