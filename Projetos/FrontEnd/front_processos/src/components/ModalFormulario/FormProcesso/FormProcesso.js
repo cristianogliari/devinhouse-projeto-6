@@ -107,7 +107,7 @@ export function FormProcesso(props) {
               Selecione
             </MenuItem>
             {
-              listaAssunto.map((interessado) => (
+              listaAssunto?.map((interessado) => (
                 <MenuItem key={interessado.id} value={interessado.id}>
                   {interessado.descricao}
                 </MenuItem>
@@ -136,7 +136,7 @@ export function FormProcesso(props) {
               Selecione
             </MenuItem>
             {
-              listaAssunto.map((assunto) => (
+              listaAssunto?.map((assunto) => (
                 <MenuItem key={assunto.id} value={assunto.id}>
                   {assunto.descricao}
                 </MenuItem>

@@ -44,7 +44,7 @@ import { AddProcessButton } from "../../components/AddButton/AddButton";
             />
           ))
         ) : (
-          listaProcesso.map((processo) => (
+          listaProcesso?.map((processo) => (
             <ProcessoCard key={processo.id} processo={processo} />
           ))
         )}
