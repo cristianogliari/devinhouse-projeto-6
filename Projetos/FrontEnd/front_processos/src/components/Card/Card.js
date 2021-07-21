@@ -22,8 +22,14 @@ import { useStyles } from "./Card.style";
 
 export const ProcessoCard = (props) => {
   const classes = useStyles();
+  const {processo}= props;
+  const [openEditModal, setEditModal] = useState(false);
+  
+  const handleEditState = () => {
+    setOpenModal((prev) => !prev);
+  };
 
-  const {handleEdit, handleDelete} = props;
+  const {handleEdit, handleDelete}
 
   const [expanded, setExpanded] = useState(false);
 
@@ -31,12 +37,13 @@ export const ProcessoCard = (props) => {
     setExpanded(!expanded);
   };
 
-  const handleCkickAwayEvent = () => {
+  const handleClickAwayEvent = () => {
     setExpanded(false);
   };
 
   return (
-    <ClickAwayListener onClickAway={handleCkickAwayEvent}>
+    <>
+    <ClickAwayListener onClickAway={handleClickAwayEvent}>
       <Card className={classes.root}>
         <CardContent className={classes.main}>
           <Grid container spacing={0}>
@@ -187,5 +194,11 @@ export const ProcessoCard = (props) => {
         </CardContent>
       </Card>
     </ClickAwayListener>
+    <ModalFormulario
+    openModal={openEditModal}
+    handleModalState={handleEditState}
+    processoDados={processo}
+  />
+  </>
   );
 };

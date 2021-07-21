@@ -6,71 +6,53 @@ import { useState } from "react";
 import { AddProcessButton } from "../../components/AddButton/AddButton";
 import { Paper } from "@material-ui/core";
 
-const skeleton = false;
+const skeletonItens = [1, 2, 3];
 
 export const Home = () => {
   const [openModal, setOpenModal] = useState(false);
+  const {
+    data: { listaProcesso },
+  } = useDataContext();
 
   const handleModalState = () => {
     setOpenModal((prev) => !prev);
   };
-
-  const handleEdit = () => {
-    setOpenModal(true)
-  }
-
+  
   return (
     <>
       <Navbar />
-      
-      <Paper elevation={3} style={{ width: '55%', margin: 'auto', paddingTop: '50px', paddingBottom: '10px' }}>
+
+      <Paper
+        elevation={3}
+        style={{
+          width: "55%",
+          margin: "auto",
+          paddingTop: "50px",
+          paddingBottom: "10px",
+        }}
+      >
         {skeleton ? (
-          <Skeleton
-            width="50%"
-            height="181px"
-            animation="wave"
-            style={{ margin: "auto", borderRadius: "10px" }}
-          />
+          skeletonItens.forEach((skeletonItens) =>(
+            <Skeleton
+              ket={skeletonItens}
+              width="50%"
+              height="181px"
+              animation="wave"
+              style={{ margin: "auto", borderRadius: "10px" }}
+            />
+          ))
         ) : (
-          <ProcessoCard 
-            handleEdit={handleEdit}
-          />
+          listaProcesso.map((processo) => (
+            <ProcessoCard key={processo.id} processo={processo} />
+          ))
         )}
-
-{skeleton ? (
-          <Skeleton
-            width="50%"
-            height="181px"
-            animation="wave"
-            style={{ margin: "auto", borderRadius: "10px" }}
-          />
-        ) : (
-          <ProcessoCard 
-            handleEdit={handleEdit}
-          />
-        )}
-
-{skeleton ? (
-          <Skeleton
-            width="50%"
-            height="181px"
-            animation="wave"
-            style={{ margin: "auto", borderRadius: "10px" }}
-          />
-        ) : (
-          <ProcessoCard 
-            handleEdit={handleEdit}
-          />
-        )}
-
-
       </Paper>
-      
-      <AddProcessButton openModalCadastro={handleModalState}/>
 
-      <ModalFormulario 
-      openModal={openModal}
-      handleModalState={handleModalState}
+      <AddProcessButton openModalCadastro={handleModalState} />
+
+      <ModalFormulario
+        openModal={openModal}
+        handleModalState={handleModalState}
       />
     </>
   );
