@@ -18,6 +18,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 
 import card_img from "../../assets/images/card_img.png";
 
+import BackendApi from "../axios/AxiosBackend";
 import { useStyles } from "./Card.style";
 
 export const ProcessoCard = (props) => {
@@ -26,10 +27,15 @@ export const ProcessoCard = (props) => {
   const [openEditModal, setEditModal] = useState(false);
   
   const handleEditState = () => {
-    setOpenModal((prev) => !prev);
+    setEditModal((prev) => !prev);
   };
 
-  const {handleEdit, handleDelete}
+  const handleDelete = (processo) => {
+    BackendApi(localStorage.getItem("keycloak-token"))
+      .removerProcessoPorId(processo) 
+      .then((res => {console.log(res)}))
+      .catch((error) => alert(error));
+  }
 
   const [expanded, setExpanded] = useState(false);
 
@@ -70,7 +76,7 @@ export const ProcessoCard = (props) => {
                     </CardContent>
                     <CardContent className={classes.gridTypoSize}>
                       <Typography className={classes.subtitle}>
-                        SOFT 1/2018
+                        {processo.chaveprocesso}
                       </Typography>
                     </CardContent>
                   </Grid>
@@ -79,14 +85,14 @@ export const ProcessoCard = (props) => {
                       className={classes.gridTypoSize}
                       style={{ marginLeft: "10px" }}
                     >
-                      <Typography className={classes.title}>Data</Typography>
+                      <Typography className={classes.title}>Ano</Typography>
                     </CardContent>
                     <CardContent
                       className={classes.gridTypoSize}
                       style={{ marginLeft: "10px" }}
                     >
                       <Typography className={classes.subtitle}>
-                        07/08/2018
+                      {processo.nuano}
                       </Typography>
                     </CardContent>
                   </Grid>
@@ -103,7 +109,7 @@ export const ProcessoCard = (props) => {
                 style={{ marginLeft: "10px" }}
               >
                 <Typography className={classes.subtitle}>
-                  Corte de Árvores Frutíferas
+                {processo.cdassunto.descricao}
                 </Typography>
               </CardContent>
             </Grid>
@@ -113,7 +119,7 @@ export const ProcessoCard = (props) => {
                   <IconButton 
                   aria-label="editar" 
                   style={{ padding: "2px" }}
-                  onClick={handleEdit}
+                  onClick={handleEditState}
                   >
                     <CreateIcon
                       fontSize="small"
@@ -171,7 +177,7 @@ export const ProcessoCard = (props) => {
                   </CardContent>
                   <CardContent className={classes.gridTypoSize}>
                     <Typography className={classes.subtitle}>
-                      Zé da Esquina
+                    {processo.cdinteressado.nminteressado}
                     </Typography>
                   </CardContent>
                 </Grid>
@@ -181,10 +187,7 @@ export const ProcessoCard = (props) => {
                   </CardContent>
                   <CardContent className={classes.gridTypoSize}>
                     <Typography className={classes.text}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    {processo.descricao}
                     </Typography>
                   </CardContent>
                 </Grid>
