@@ -28,7 +28,7 @@ const DataProvider = ({ children }) => {
     setStateLoading("ready")
   };
 
-   const recarregarProcessos = () => {
+  const recarregarProcessos = () => {
     new BackendApi(localStorage.getItem("keycloak-token"))
     .consultarTodosOsProcessos()
       .then((res) => setlistaProcesso(res.data))

@@ -10,7 +10,12 @@ import {
   IconButton,
   Card,
   ClickAwayListener,
+  Button,
 } from "@material-ui/core";
+
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogTitle from "@material-ui/core/DialogTitle";
 
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import CreateIcon from "@material-ui/icons/Create";
@@ -27,6 +32,7 @@ export const ProcessoCard = (props) => {
   const classes = useStyles();
   const history = useHistory();
   const {processo}= props;
+  const [openDialog, setOpenDialog] = useState(false);
   const [openEditModal, setEditModal] = useState(false);
   
   const handleEditState = () => {
@@ -38,7 +44,7 @@ export const ProcessoCard = (props) => {
       .removerProcessoPorId(processo) 
         .then((res => {console.log(res)}))
         .catch((error) => alert(error));
-    history.push('/');
+    handleClickDialog();
   }
 
   const [expanded, setExpanded] = useState(false);
@@ -50,6 +56,10 @@ export const ProcessoCard = (props) => {
   const handleClickAwayEvent = () => {
     setExpanded(false);
   };
+
+  const handleClickDialog = () => {
+    setOpenDialog(!openDialog);
+  }
 
   return (
     <>
@@ -134,7 +144,7 @@ export const ProcessoCard = (props) => {
                   <IconButton 
                   aria-label="deletar" 
                   style={{ padding: "2px" }}
-                  onClick={handleDelete}
+                  onClick={handleClickDialog}
                   >
                     <DeleteIcon
                       fontSize="small"
@@ -201,12 +211,32 @@ export const ProcessoCard = (props) => {
         </CardContent>
       </Card>
     </ClickAwayListener>
+
+    <Dialog
+      open={openDialog}
+      onClose={handleClickDialog}
+      aria-labelledby="responsive-dialog-title" >
+
+        <DialogTitle id="responsive-dialog-title">
+          {"Deseja realmente excluir o processo?"}
+        </DialogTitle>
+
+      <DialogActions>
+        <Button autoFocus onClick={handleClickDialog} color="secondary">
+          Cancelar
+        </Button>
+        <Button onClick={handleDelete} color="primary" autoFocus>
+          Confirmar
+        </Button>
+
+      </DialogActions>
+    </Dialog>
+
     <ModalFormulario
       key={processo.id}
       openModal={openEditModal}
       handleModalState={handleEditState}
-      processo={processo}
-    />
+      processo={processo} />
   </>
   );
 };

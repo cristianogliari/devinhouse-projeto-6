@@ -13,10 +13,9 @@ export const Home = () => {
   const skeletonItens = [1, 2, 3];
   
   const [openModal, setOpenModal] = useState(false);
+  const [listaProcessoLocal, setListaProcessoLocal] = useState([]);
   
-  const { stateLoading, listaProcesso, carregarData} = useDataContext();
-
-  const { loading, setLoading } = useState(true);
+  const { stateLoading, listaProcesso, carregarData, recarregarProcessos } = useDataContext();
 
   const handleModalState = () => {
     setOpenModal((prev) => !prev);
@@ -24,7 +23,13 @@ export const Home = () => {
 
   useEffect(() => {
     carregarData();
+    setListaProcessoLocal(listaProcesso);
   }, []);
+
+  useEffect(() => {
+    recarregarProcessos();
+    console.log(listaProcessoLocal);
+  }, [listaProcessoLocal]);
 
   return (
     <>
@@ -38,7 +43,7 @@ export const Home = () => {
           paddingTop: "50px",
           paddingBottom: "10px", }} >
 
-          {loading === "skeleton" ? (skeletonItens?.map((skeletonItens) => (
+          {stateLoading === "skeleton" ? (skeletonItens?.map((skeletonItens) => (
               <Skeleton
                 key={skeletonItens}
                 width="50%"
@@ -47,7 +52,7 @@ export const Home = () => {
                 style={{ margin: "auto", borderRadius: "10px" }}
               />
             )))
-          : (listaProcesso?.map((processo) => (
+          : (listaProcessoLocal?.map((processo) => (
               <ProcessoCard key={processo.id} processo={processo} />
             )))}
       </Paper>
