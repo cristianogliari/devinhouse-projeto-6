@@ -34,6 +34,13 @@ const DataProvider = ({ children }) => {
       .then((res) => setlistaProcesso(res.data))
       .catch((error) => alert(error));
    }
+
+   const buscarProcessosPorAssuntoID = (assuntoid) => {
+    new BackendApi(localStorage.getItem("keycloak-token"))
+    .consultaPrcocessoPorAssunto(assuntoid)
+      .then((res) => setlistaProcesso(res.data))
+      .catch((error) => alert(error));
+   }
    
   //  const conectar = (data) => {
   //   AxiosLogin.autenticarUsuario(data)
@@ -46,7 +53,7 @@ const DataProvider = ({ children }) => {
   //  };
 
   return (
-    <DataContext.Provider value={{ stateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos}}>
+    <DataContext.Provider value={{ stateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos, buscarProcessosPorAssuntoID}}>
       {children}
     </DataContext.Provider>
   );
