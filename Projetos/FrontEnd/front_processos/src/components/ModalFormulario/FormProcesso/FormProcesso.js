@@ -34,7 +34,7 @@ const validacaoSchema = yup.object({
 
 export function FormProcesso(props) {
   const { formType, processoDados, handleModal } = props;
-  const { data: {listaAssunto, listaInteressado}} = useDataContext();
+  const { listaAssunto, listaInteressado} = useDataContext();
   const classes = useStyle();
   const formik = useFormik({
     initialValues: {

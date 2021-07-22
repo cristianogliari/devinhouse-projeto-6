@@ -12,6 +12,7 @@ import javax.annotation.security.RolesAllowed;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,6 +25,7 @@ import br.com.devinhouse.backend.services.ProcessoService;
 
 @RestController
 @RequestMapping(value = "/processos/v1", headers = "api-version=v1")
+@CrossOrigin
 public class ProcessoController {
 	
 	@Autowired

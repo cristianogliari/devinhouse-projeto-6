@@ -5,49 +5,49 @@ import BackendApi from "../axios/AxiosBackend";
 const DataContext = createContext({});
 
 const DataProvider = ({ children }) => {
-  const [data, setData] = useState({state: "",});
+  const [stateLoading, setStateLoading] = useState("skeleton");
+  const [listaAssunto, setListaAssunto] = useState({});
+  const [listaProcesso, setlistaProcesso] = useState([]);
+  const [listaInteressado, setListaInteressado] = useState({});
 
-  const carregarData = (payload) => {
-    let listaInteressado;
-    let listaAssunto;
-    let listaProcesso;
-    setData({payload, state: "loading",});
+  const carregarData = () => {
     new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsInteressados() 
-      .then((res => {listaInteressado = res}))
-      .catch((error) => alert(error));
+        .then((res) => setListaInteressado(res.data))
+        .catch((error) => alert(error));
+
     new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsAssuntos() 
-      .then((res => {listaAssunto = res}))
-      .catch((error) => alert(error));
-    setData({...data, listaInteressado, listaAssunto, state:"skeleton"})
+        .then((res) => setListaAssunto(res.data))
+        .catch((error) => alert(error));
+
     new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsProcessos()
-      .then((res => {listaProcesso = res}))
-      .catch((error) => alert(error));
-    setData({ ...data, listaProcesso, state: "ready", });
+        .then((res) => setlistaProcesso(res.data))
+        .catch((error) => alert(error));
+    setStateLoading("ready")
   };
 
-  const recarregarProcessos = () => {
-    let listaProcesso;
-    setData({...data, state:"skeleton"})
-    BackendApi(localStorage.getItem("keycloak-token"))
-      .consultarTodosOsProcessos()
-      .then((res => {listaProcesso = res}))
-      .catch((error) => alert(error));
-    setData({ ...data, listaProcesso, state: "ready", });
-  }
+  // const recarregarProcessos = () => {
+  //   let listaProcesso;
+  //   setData({...data, state:"skeleton"})
+  //   BackendApi(localStorage.getItem("keycloak-token"))
+  //     .consultarTodosOsProcessos()
+  //       .then((res => {listaProcesso = res.data}))
+  //       .catch((error) => alert(error));
+  //   setData({ ...data, listaProcesso, state: "ready", });
+  // }
   /* const conectar = (data) => {
     AxiosLogin.autenticarUsuario(data)
       .then((res) => logar(res))
       .catch((error) => alert(error));
   }; */
-  const removerData = () => {
-    setData({state: "waiting",});
-  };
+  // const removerData = () => {
+  //   setData({state: "waiting",});
+  // };
 
   return (
-    <DataContext.Provider value={{ data, carregarData, recarregarProcessos, removerData }}>
+    <DataContext.Provider value={{ stateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, }}>
       {children}
     </DataContext.Provider>
   );

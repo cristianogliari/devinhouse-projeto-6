@@ -14,21 +14,19 @@ export const Home = () => {
   
   const [openModal, setOpenModal] = useState(false);
   
-  const { data:{state}, carregarData} = useDataContext();
+  const { stateLoading, listaProcesso, carregarData} = useDataContext();
 
-  const [loading] = useState(state);
-
-  const {
-    data: { listaProcesso },
-  } = useDataContext();
+  const { loading, setLoading } = useState(true);
 
   const handleModalState = () => {
     setOpenModal((prev) => !prev);
   };
 
-  useEffect(() => {
-    carregarData();
-  }, []);
+  // useEffect(() => {
+  //   ;
+  // }, []);
+
+  carregarData()
 
   return (
     <>
@@ -40,29 +38,27 @@ export const Home = () => {
           width: "55%",
           margin: "auto",
           paddingTop: "50px",
-          paddingBottom: "10px",
-        }}
-      >
-        {loading === "skeleton" ? skeletonItens.forEach((skeletonItens) => (
+          paddingBottom: "10px", }} >
+
+          {loading === "skeleton" ? (skeletonItens?.map((skeletonItens) => (
               <Skeleton
-                ket={skeletonItens}
+                key={skeletonItens}
                 width="50%"
                 height="181px"
                 animation="wave"
                 style={{ margin: "auto", borderRadius: "10px" }}
               />
-            ))
-          : listaProcesso?.map((processo) => (
+            )))
+          : (listaProcesso?.map((processo) => (
               <ProcessoCard key={processo.id} processo={processo} />
-            ))}
+            )))}
       </Paper>
 
       <AddProcessButton openModalCadastro={handleModalState} />
 
       <ModalFormulario
         openModal={openModal}
-        handleModalState={handleModalState}
-      />
+        handleModalState={handleModalState} />
     </>
   );
 };

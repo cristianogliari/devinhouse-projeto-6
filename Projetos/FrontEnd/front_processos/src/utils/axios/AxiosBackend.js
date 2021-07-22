@@ -13,7 +13,7 @@ export default class BackendApi {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
-          'access_token' : this.access_token
+          'Authorization' : `Bearer ${this.access_token}`
         }    
       })
 
@@ -30,7 +30,7 @@ export default class BackendApi {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
-          'access_token' : this.access_token
+          'Authorization' : `Bearer ${this.access_token}`
         }    
       })
     
@@ -47,7 +47,7 @@ export default class BackendApi {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
-          'access_token' : this.access_token
+          'Authorization' : `Bearer ${this.access_token}`
         }    
       })
 
@@ -64,7 +64,7 @@ export default class BackendApi {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
-          'access_token' : this.access_token
+          'Authorization' : `Bearer ${this.access_token}`
         }    
       })
 
@@ -81,7 +81,7 @@ export default class BackendApi {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
-          'access_token' : this.access_token
+          'Authorization' : `Bearer ${this.access_token}`
         }    
       })
 
@@ -99,7 +99,7 @@ export default class BackendApi {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
-          'access_token' : this.access_token
+          'Authorization' : `Bearer ${this.access_token}`
         }    
       })
 
@@ -117,7 +117,7 @@ export default class BackendApi {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
-          'access_token' : this.access_token
+          'Authorization' : `Bearer ${this.access_token}`
         }    
       })
 
@@ -135,7 +135,7 @@ export default class BackendApi {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
-          'access_token' : this.access_token
+          'Authorization' : `Bearer ${this.access_token}`
         }    
       })
     
@@ -152,7 +152,7 @@ export default class BackendApi {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
-          'access_token' : this.access_token
+          'Authorization' : `Bearer ${this.access_token}`
         }    
       })
     

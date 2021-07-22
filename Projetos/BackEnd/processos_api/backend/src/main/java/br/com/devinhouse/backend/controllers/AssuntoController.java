@@ -11,6 +11,7 @@ import javax.annotation.security.RolesAllowed;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,7 @@ import br.com.devinhouse.backend.services.AssuntoService;
 
 @RestController
 @RequestMapping(value = "/assuntos/v1", headers = "api-version=v1")
+@CrossOrigin
 public class AssuntoController {
 	
 	private static final Logger LOGGER = LogManager.getLogger();
