@@ -28,26 +28,25 @@ const DataProvider = ({ children }) => {
     setStateLoading("ready")
   };
 
-  // const recarregarProcessos = () => {
-  //   let listaProcesso;
-  //   setData({...data, state:"skeleton"})
-  //   BackendApi(localStorage.getItem("keycloak-token"))
-  //     .consultarTodosOsProcessos()
-  //       .then((res => {listaProcesso = res.data}))
-  //       .catch((error) => alert(error));
-  //   setData({ ...data, listaProcesso, state: "ready", });
-  // }
-  /* const conectar = (data) => {
-    AxiosLogin.autenticarUsuario(data)
-      .then((res) => logar(res))
+   const recarregarProcessos = () => {
+    new BackendApi(localStorage.getItem("keycloak-token"))
+    .consultarTodosOsProcessos()
+      .then((res) => setlistaProcesso(res.data))
       .catch((error) => alert(error));
-  }; */
-  // const removerData = () => {
-  //   setData({state: "waiting",});
-  // };
+   }
+   
+  //  const conectar = (data) => {
+  //   AxiosLogin.autenticarUsuario(data)
+  //     .then((res) => logar(res))
+  //     .catch((error) => alert(error));
+  // }; 
+
+  //  const removerData = () => {
+  //    setData({state: "waiting",});
+  //  };
 
   return (
-    <DataContext.Provider value={{ stateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, }}>
+    <DataContext.Provider value={{ stateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos}}>
       {children}
     </DataContext.Provider>
   );
