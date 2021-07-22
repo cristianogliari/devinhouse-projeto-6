@@ -22,11 +22,9 @@ export const Home = () => {
     setOpenModal((prev) => !prev);
   };
 
-  // useEffect(() => {
-  //   ;
-  // }, []);
-
-  carregarData()
+  useEffect(() => {
+    carregarData();
+  }, []);
 
   return (
     <>

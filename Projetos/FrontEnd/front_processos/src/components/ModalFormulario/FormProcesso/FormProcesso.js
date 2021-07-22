@@ -1,5 +1,6 @@
 import { Typography, TextField, Button, Paper, MenuItem } from "@material-ui/core";
 import { useFormik } from "formik";
+import { useHistory } from "react-router-dom";
 import * as yup from "yup";
 
 import BackendApi from "../../../utils/axios/AxiosBackend";
@@ -34,6 +35,7 @@ const validacaoSchema = yup.object({
 
 export function FormProcesso(props) {
   const { formType, processoDados, handleModal } = props;
+  const history = useHistory();
   const { listaAssunto, listaInteressado} = useDataContext();
   const classes = useStyle();
   const formik = useFormik({
@@ -49,7 +51,7 @@ export function FormProcesso(props) {
     validationSchema: validacaoSchema,
     onSubmit: (value) => {
       if (formType === "cadastro") {
-        BackendApi(localStorage.getItem("keycloak-token"))
+        new BackendApi(localStorage.getItem("keycloak-token"))
           .cadastrarProcesso({
               "sgorgaosetor" : value.orgaoSetor,
               "descricao" : value.descricaoProcesso,
@@ -64,7 +66,7 @@ export function FormProcesso(props) {
           .catch((error) => alert(error));
         
       } else {
-        BackendApi(localStorage.getItem("keycloak-token"))
+        new BackendApi(localStorage.getItem("keycloak-token"))
           .atualizaProcessoPorId(
             {
               "id": processoDados.id,
@@ -92,6 +94,7 @@ export function FormProcesso(props) {
           .catch((error) => alert(error));
       }
       handleModal();
+      history.push('/');
     },
   });
   return (
@@ -140,7 +143,7 @@ export function FormProcesso(props) {
             {
               listaInteressado?.map((interessado) => (
                 <MenuItem key={interessado.id} value={interessado.id}>
-                  {interessado.descricao}
+                  {interessado.nminteressado}
                 </MenuItem>
               ))
             }

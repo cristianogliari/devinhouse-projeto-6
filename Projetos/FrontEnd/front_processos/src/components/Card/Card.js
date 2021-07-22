@@ -21,9 +21,11 @@ import card_img from "../../assets/images/card_img.png";
 import {ModalFormulario} from "../ModalFormulario"
 import BackendApi from "../../utils/axios/AxiosBackend";
 import { useStyles } from "./Card.style";
+import { useHistory } from "react-router-dom";
 
 export const ProcessoCard = (props) => {
   const classes = useStyles();
+  const history = useHistory();
   const {processo}= props;
   const [openEditModal, setEditModal] = useState(false);
   
@@ -31,11 +33,12 @@ export const ProcessoCard = (props) => {
     setEditModal((prev) => !prev);
   };
 
-  const handleDelete = (processo) => {
-    BackendApi(localStorage.getItem("keycloak-token"))
+  const handleDelete = () => {
+    new BackendApi(localStorage.getItem("keycloak-token"))
       .removerProcessoPorId(processo) 
-      .then((res => {console.log(res)}))
-      .catch((error) => alert(error));
+        .then((res => {console.log(res)}))
+        .catch((error) => alert(error));
+    history.push('/');
   }
 
   const [expanded, setExpanded] = useState(false);
@@ -199,10 +202,11 @@ export const ProcessoCard = (props) => {
       </Card>
     </ClickAwayListener>
     <ModalFormulario
-    openModal={openEditModal}
-    handleModalState={handleEditState}
-    processoDados={processo}
-  />
+      key={processo.id}
+      openModal={openEditModal}
+      handleModalState={handleEditState}
+      processo={processo}
+    />
   </>
   );
 };

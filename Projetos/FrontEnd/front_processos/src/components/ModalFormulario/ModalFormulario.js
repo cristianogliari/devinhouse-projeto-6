@@ -5,11 +5,12 @@ import { FormProcesso } from "./FormProcesso";
 import { useStyle } from "./ModalFormulario.styles";
 
 export function ModalFormulario(props) {
-  const { openModal, handleModalState, processo } = props;
+  const { key, openModal, handleModalState, processo } = props;
 
   const classes = useStyle();
   return (
     <Modal
+      key={key}
       className={classes.teste}
       open={openModal}
       onClose={handleModalState}
@@ -17,7 +18,7 @@ export function ModalFormulario(props) {
       aria-describedby="modal-description"
     >
       <div>
-        {processo == null ? (
+        {processo === undefined ? (
           <FormProcesso
             handleModal={handleModalState}
             formType="cadastro"

@@ -6,9 +6,9 @@ const DataContext = createContext({});
 
 const DataProvider = ({ children }) => {
   const [stateLoading, setStateLoading] = useState("skeleton");
-  const [listaAssunto, setListaAssunto] = useState({});
+  const [listaAssunto, setListaAssunto] = useState([]);
   const [listaProcesso, setlistaProcesso] = useState([]);
-  const [listaInteressado, setListaInteressado] = useState({});
+  const [listaInteressado, setListaInteressado] = useState([]);
 
   const carregarData = () => {
     new BackendApi(localStorage.getItem("keycloak-token"))

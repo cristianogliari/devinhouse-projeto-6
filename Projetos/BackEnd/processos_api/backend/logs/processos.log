@@ -7850,3 +7850,973 @@ INSERT INTO processo(id, nuprocesso, sgorgaosetor, nuano, chaveprocesso, descric
 2021-07-21 22:43:23.275  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
 2021-07-21 22:43:23.278  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
 2021-07-21 22:43:23.283  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:05.937  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:05.949  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:05.957  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:05.965  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:05.973  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:05.980  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:05.994  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.002  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.026  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.031  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.064  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.071  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.089  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.095  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.108  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.115  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.132  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.138  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.153  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.160  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.175  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.184  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.193  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.199  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.212  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.220  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.228  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.234  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.245  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.253  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.267  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.273  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.290  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.295  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.305  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.315  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.324  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.329  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.338  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.347  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.356  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.362  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.372  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.380  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.390  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.394  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.404  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.417  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.429  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.435  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.443  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.450  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.455  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.460  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.466  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.471  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.481  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.487  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.494  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.501  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.509  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.517  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.524  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.531  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.537  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.544  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.552  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.562  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.569  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.577  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.583  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.587  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.593  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.598  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.605  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.612  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.621  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.627  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.634  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.640  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.648  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.656  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.661  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.666  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.673  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.682  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.688  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.692  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.698  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.703  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.713  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.720  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.728  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.735  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.745  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.753  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.758  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.765  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.780  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.786  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.792  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.798  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.802  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.817  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.822  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.831  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.840  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.853  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.863  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.867  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.871  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.877  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.883  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.889  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.895  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.901  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.913  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.920  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.927  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.934  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.945  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.952  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.957  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.964  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.973  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.981  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.987  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:06.992  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.004  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.012  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.017  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.021  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.024  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.028  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.036  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.042  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.048  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.053  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.058  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.063  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.070  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.077  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.084  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.088  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.093  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.097  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.108  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.117  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.123  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.130  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.138  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.147  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.155  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.160  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.165  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.175  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.182  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.187  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.192  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.197  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.207  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.211  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.219  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.224  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.228  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.234  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.240  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.246  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.252  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.257  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.261  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.266  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.274  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.281  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.286  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.291  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.296  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.304  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.311  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.318  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.323  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.328  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.338  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.342  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.348  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.353  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.363  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.369  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.378  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.383  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.390  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.396  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.405  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.411  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.417  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.422  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.428  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.435  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.442  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.453  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.459  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.469  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.478  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.489  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.495  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.504  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.518  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.525  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.535  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.543  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.550  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.556  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.562  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.572  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.576  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.581  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.586  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.592  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.598  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.606  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.612  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.618  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.625  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.630  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.637  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.644  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.652  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.658  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.667  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.675  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.681  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.686  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.694  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.707  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.713  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.720  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.725  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.732  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.738  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.744  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.750  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.755  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.759  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.764  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.771  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.776  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.783  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.787  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.792  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.803  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.811  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.820  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.828  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.838  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.843  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.852  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.859  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.865  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.875  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.881  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.887  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.892  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.905  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.911  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.920  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.926  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.932  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.939  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.950  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.957  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.962  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.970  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.975  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:07.979  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.000  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.006  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.023  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.030  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.048  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.055  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.077  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.085  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.109  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.117  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.136  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.142  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.153  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.159  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.173  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.180  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.196  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.203  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.216  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.222  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.240  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.247  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.260  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.267  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.280  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.286  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.301  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.309  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.322  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.330  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.345  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.351  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.360  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.367  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.381  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.391  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.407  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.412  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.421  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.427  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.440  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.445  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.458  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.465  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.476  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.480  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.495  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.502  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.517  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.522  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.535  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.541  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.552  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.557  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.573  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.579  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.589  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.597  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.608  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.613  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.629  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.635  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.645  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.649  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.667  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.673  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.684  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.689  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.705  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.710  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.719  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.725  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.738  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.744  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.754  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.763  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.773  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.779  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.791  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.799  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.813  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.822  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.832  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.838  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.848  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.855  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.867  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.873  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.886  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.894  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.904  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.910  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.921  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.931  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.940  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.947  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.957  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.964  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.977  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:08.983  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.036  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.042  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.066  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.071  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.098  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.104  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.127  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.133  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.150  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.158  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.175  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.181  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.209  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.215  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.234  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.240  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.263  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.270  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.291  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.295  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.314  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.322  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.339  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.344  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.363  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.370  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.389  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.395  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.408  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.416  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.435  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.443  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.461  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.468  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.483  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.492  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.508  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.515  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.536  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.542  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.562  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.568  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.582  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.589  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.606  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.610  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.627  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.633  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.647  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.653  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.669  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.677  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.696  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.703  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.719  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.726  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.741  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.749  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.763  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.769  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.790  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.797  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.813  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.821  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.835  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.840  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.860  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.864  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.882  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.889  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.908  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.918  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.930  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.935  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.954  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.961  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.974  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.982  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:09.998  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.005  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.025  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.031  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.047  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.056  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.084  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.091  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.104  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.110  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.130  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.135  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.155  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.159  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.176  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.188  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.204  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.210  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.228  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.235  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.255  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.261  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.276  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.287  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.299  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.304  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.325  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.331  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.347  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.354  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.371  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.377  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.393  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.400  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.417  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.423  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.436  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.445  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.463  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.468  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.484  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.490  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.511  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.516  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.534  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.541  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.555  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.563  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.585  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.591  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.605  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.614  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.630  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.641  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.655  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.661  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.680  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.688  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.708  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.716  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.737  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.745  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.758  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.764  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.781  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.788  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.806  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.812  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.825  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.829  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.848  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.854  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.869  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.878  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.892  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.899  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.916  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.922  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.937  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.949  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.960  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.965  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.983  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:10.990  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.006  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.011  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.027  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.031  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.050  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.058  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.073  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.078  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.100  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.107  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.121  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.126  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.142  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.148  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.162  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.170  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.187  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.194  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.209  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.219  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.230  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.237  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.258  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.264  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.278  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.284  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.302  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.308  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.322  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.328  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.344  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.348  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.363  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.371  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.386  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.393  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.410  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.415  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.431  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.438  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.452  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.458  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.475  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.481  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.496  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.505  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.519  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.525  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.542  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.547  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.565  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.574  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.586  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.592  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.610  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.616  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.631  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.639  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.653  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.660  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.676  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.682  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.695  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.704  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.719  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.724  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.744  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.749  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.764  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.772  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.786  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.798  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.811  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.818  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.837  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.847  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.863  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.871  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.886  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.892  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.908  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.915  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.931  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.937  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.950  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.956  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.976  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.982  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:11.995  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.000  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.018  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.025  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.039  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.046  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.063  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.070  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.087  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.094  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.109  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.115  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.131  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.137  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.153  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.161  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.178  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.185  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.199  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.205  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.224  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.232  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.246  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.252  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.272  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.279  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.298  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.304  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.317  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.325  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.343  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.348  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.363  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.374  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.387  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.394  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.409  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.415  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.432  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.439  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.454  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.462  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.475  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.481  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.499  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.505  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.519  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.526  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.541  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.546  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.562  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.568  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.582  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.592  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.604  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.611  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.626  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.633  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.648  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.656  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.671  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.677  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.698  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.708  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.723  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.733  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.763  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.771  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.787  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.794  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.818  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.826  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.852  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.858  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.871  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.879  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.894  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.901  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.922  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.927  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.938  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.946  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.961  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.966  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.991  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:12.997  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.007  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.014  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.031  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.041  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.056  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.062  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.075  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.086  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.104  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.110  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.126  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.133  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.149  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.154  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.170  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.177  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.191  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.198  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.215  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.222  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.236  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.244  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.261  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.267  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.285  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.293  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.313  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.321  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.342  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.352  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.370  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.379  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.395  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.400  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.422  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.428  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.447  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:47:13.454  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:48:25.831  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:53:01.031  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:54:46.957  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:56:20.024  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:56:24.302  WARN 33161 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2021-07-21 22:57:40.192  WARN 33161 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]
+2021-07-21 22:57:58.986  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:58:43.087  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 22:59:38.095  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:01:19.119  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:02:55.706  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:04:01.877  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:04:16.068  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:04:23.635  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:05:20.064  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:06:27.058  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:07:13.096  INFO 33161 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:07:52.910  WARN 33161 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23505, SQLState: 23505
+2021-07-21 23:07:52.910 ERROR 33161 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PROCESSO(ID) [1, 'SOFT 1/2021', 'Corte de arvores para fabricar nave espacial', '2021', 1, 'SOFT', 1, 1]"; SQL statement:
+insert into processo (assunto_id, interessado_id, chaveprocesso, descricao, nuano, nuprocesso, sgorgaosetor, id) values (?, ?, ?, ?, ?, ?, ?, ?) [23505-200]
+2021-07-21 23:07:52.917 ERROR 33161 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [/backend] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint ["PRIMARY KEY ON PUBLIC.PROCESSO(ID) [1, 'SOFT 1/2021', 'Corte de arvores para fabricar nave espacial', '2021', 1, 'SOFT', 1, 1]"; SQL statement:
+insert into processo (assunto_id, interessado_id, chaveprocesso, descricao, nuano, nuprocesso, sgorgaosetor, id) values (?, ?, ?, ?, ?, ?, ?, ?) [23505-200]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.PROCESSO(ID) [1, 'SOFT 1/2021', 'Corte de arvores para fabricar nave espacial', '2021', 1, 'SOFT', 1, 1]"; SQL statement:
+insert into processo (assunto_id, interessado_id, chaveprocesso, descricao, nuano, nuprocesso, sgorgaosetor, id) values (?, ?, ?, ?, ?, ?, ?, ?) [23505-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:127) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:531) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.insertRows(Insert.java:195) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.dml.Insert.update(Insert.java:151) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Command.executeUpdate(Command.java:251) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-3.4.5.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.5.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3297) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3824) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:107) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723) ~[na:na]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:345) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:93) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1362) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:453) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3212) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2380) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.4.30.Final.jar:5.4.30.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-5.3.6.jar:5.3.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743) ~[spring-tx-5.3.6.jar:5.3.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711) ~[spring-tx-5.3.6.jar:5.3.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654) ~[spring-tx-5.3.6.jar:5.3.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407) ~[spring-tx-5.3.6.jar:5.3.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.4.8.jar:2.4.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.6.jar:5.3.6]
+	at com.sun.proxy.$Proxy124.save(Unknown Source) ~[na:na]
+	at br.com.devinhouse.backend.services.ProcessoService.cadastrarProcesso(ProcessoService.java:72) ~[classes/:na]
+	at br.com.devinhouse.backend.controllers.ProcessoController.criarProcesso(ProcessoController.java:39) ~[classes/:na]
+	at br.com.devinhouse.backend.controllers.ProcessoController$$FastClassBySpringCGLIB$$cb6e8e8a.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:61) ~[spring-security-core-5.4.6.jar:5.4.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-5.3.6.jar:5.3.6]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692) ~[spring-aop-5.3.6.jar:5.3.6]
+	at br.com.devinhouse.backend.controllers.ProcessoController$$EnhancerBySpringCGLIB$$f0d0efc6.criarProcesso(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.6.jar:5.3.6]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.45.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter.doFilter(KeycloakAuthenticatedActionsFilter.java:57) ~[keycloak-spring-security-adapter-14.0.0.jar:14.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter.doFilter(KeycloakSecurityContextRequestFilter.java:61) ~[keycloak-spring-security-adapter-14.0.0.jar:14.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter.doFilter(KeycloakPreAuthActionsFilter.java:96) ~[keycloak-spring-security-adapter-14.0.0.jar:14.0.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter.successfulAuthentication(KeycloakAuthenticationProcessingFilter.java:214) ~[keycloak-spring-security-adapter-14.0.0.jar:14.0.0]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:232) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticatedActionsFilter.doFilter(KeycloakAuthenticatedActionsFilter.java:74) ~[keycloak-spring-security-adapter-14.0.0.jar:14.0.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.keycloak.adapters.springsecurity.filter.KeycloakSecurityContextRequestFilter.doFilter(KeycloakSecurityContextRequestFilter.java:92) ~[keycloak-spring-security-adapter-14.0.0.jar:14.0.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.keycloak.adapters.springsecurity.filter.KeycloakAuthenticationProcessingFilter.successfulAuthentication(KeycloakAuthenticationProcessingFilter.java:214) ~[keycloak-spring-security-adapter-14.0.0.jar:14.0.0]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:232) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.keycloak.adapters.springsecurity.filter.KeycloakPreAuthActionsFilter.doFilter(KeycloakPreAuthActionsFilter.java:96) ~[keycloak-spring-security-adapter-14.0.0.jar:14.0.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.keycloak.adapters.tomcat.AbstractAuthenticatedActionsValve.invoke(AbstractAuthenticatedActionsValve.java:67) ~[spring-boot-container-bundle-14.0.0.jar:14.0.0]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.keycloak.adapters.tomcat.AbstractKeycloakAuthenticatorValve.invoke(AbstractKeycloakAuthenticatorValve.java:181) ~[spring-boot-container-bundle-14.0.0.jar:14.0.0]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-07-21 23:10:05.316  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:10:41.128  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:11:20.099  INFO 33161 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:12:46.044  INFO 33161 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:12:48.892  INFO 33161 --- [http-nio-8080-exec-10] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:13:24.618  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:13:45.608  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:14:20.191  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:15:32.305  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:15:34.267  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:15:35.179  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:15:35.772  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:15:45.561  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:15:47.258  INFO 33161 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:16:01.989  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:16:06.907  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:16:18.675  INFO 33161 --- [http-nio-8080-exec-2] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:16:46.962  INFO 33161 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:18:20.464  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:18:31.469  INFO 33161 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:18:33.670  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:18:34.576  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:18:35.424  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-21 23:23:18.213  WARN 33161 --- [RMI TCP Connection(77)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
