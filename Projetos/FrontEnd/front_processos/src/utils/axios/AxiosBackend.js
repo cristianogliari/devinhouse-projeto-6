@@ -43,7 +43,7 @@ export default class BackendApi {
 
   async consultaProcessoPorId(data) {
     try {
-      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar/id/${data.id}`, {
+      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar/id/${data}`, {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',

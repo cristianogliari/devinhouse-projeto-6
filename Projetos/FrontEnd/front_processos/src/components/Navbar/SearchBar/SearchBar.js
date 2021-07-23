@@ -9,22 +9,32 @@ import {
 import SearchIcon from "@material-ui/icons/Search";
 import TuneIcon from "@material-ui/icons/Tune";
 
+import BackendApi from "../../../utils/axios/AxiosBackend";
 import { useDataContext } from "../../../utils/context/DataContext";
 import { useStyles } from "./SearchBar.styles";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function SearchBar() {
   const classes = useStyles();
 
-  const { listaAssunto } = useDataContext();
+  const { listaAssunto, setlistaProcesso, listaProcesso } = useDataContext();
 
   const [searchState, setSearchState] = useState(true);
   const [assuntoSelecionado, setAssuntoSelecionado] = useState(0);
 
   const handleChangeSearch = () => {
     setSearchState((prev) => !prev);
-    console.log(assuntoSelecionado);
   };
+
+  const handleGetProcessos = () => {
+    new BackendApi(localStorage.getItem("keycloak-token")).consultaProcessoPorId(assuntoSelecionado)
+    .then((res) => setlistaProcesso(res))
+    .catch((error) => alert(error));
+  }
+
+  useEffect(() => {
+    handleGetProcessos();
+  }, [assuntoSelecionado]);
 
   return (
     <>
