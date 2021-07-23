@@ -6,8 +6,6 @@ const DataContext = createContext({});
 
 const DataProvider = ({ children }) => {
   const [stateLoading, setStateLoading] = useState("skeleton");
-  const [listaProcessoSelecionado, setListaProcessoSelecionado] = useState([]);
-  //const [assuntoSelecionado, setAssuntoSelecionado] = useState(0);
   const [listaAssunto, setListaAssunto] = useState([]);
   const [listaProcesso, setlistaProcesso] = useState([]);
   const [listaInteressado, setListaInteressado] = useState([]);

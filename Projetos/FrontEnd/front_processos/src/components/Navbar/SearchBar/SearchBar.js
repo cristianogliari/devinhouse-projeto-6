@@ -27,16 +27,13 @@ export function SearchBar() {
   };
 
   const handleGetProcessos = () => {
-    new BackendApi(assuntoSelecionado).consultaProcessoPorId()
+    new BackendApi(localStorage.getItem("keycloak-token")).consultaProcessoPorId(assuntoSelecionado)
     .then((res) => setlistaProcesso(res))
     .catch((error) => alert(error));
-    console.log("11111111111" + listaProcesso)
   }
 
   useEffect(() => {
     handleGetProcessos();
-    console.log("0000000000000" + assuntoSelecionado)
-    console.log("11111111111" + listaProcesso)
   }, [assuntoSelecionado]);
 
   return (

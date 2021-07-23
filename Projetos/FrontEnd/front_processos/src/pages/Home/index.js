@@ -28,18 +28,17 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-
-      {loading === "skeleton"
-        ? skeletonItens?.map((skeletonItens) => (
-            <Paper
-              elevation={3}
-              style={{
-                width: "55%",
-                margin: "auto",
-                paddingTop: "50px",
-                paddingBottom: "10px",
-              }}
-            >
+      <Paper
+        elevation={3}
+        style={{
+          width: "55%",
+          margin: "auto",
+          paddingTop: "50px",
+          paddingBottom: "10px",
+        }}
+      >
+        {loading === "skeleton"
+          ? skeletonItens?.map((skeletonItens) => (
               <Skeleton
                 key={skeletonItens}
                 width="50%"
@@ -47,22 +46,11 @@ export const Home = () => {
                 animation="wave"
                 style={{ margin: "auto", borderRadius: "10px" }}
               />
-            </Paper>
-          ))
-        : listaProcesso?.map((processo) => (
-            <Paper
-              elevation={3}
-              style={{
-                width: "55%",
-                margin: "auto",
-                paddingTop: "50px",
-                paddingBottom: "10px",
-              }}
-            >
+            ))
+          : listaProcesso?.map((processo) => (
               <ProcessoCard key={processo.id} processo={processo} />
-            </Paper>
-          ))}
-
+            ))}
+      </Paper>
       <AddProcessButton openModalCadastro={handleModalState} />
 
       <ModalFormulario
