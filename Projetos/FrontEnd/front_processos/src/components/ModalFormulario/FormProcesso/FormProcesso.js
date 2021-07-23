@@ -6,6 +6,7 @@ import * as yup from "yup";
 import BackendApi from "../../../utils/axios/AxiosBackend";
 import { useDataContext } from "../../../utils/context/DataContext";
 import { useStyle } from "./FormProcesso.styles";
+import { toastSuccess, toastError } from "../../../utils/alert/toast";
 
 const validacaoSchema = yup.object({
   anoDoProcesso: yup
@@ -34,9 +35,12 @@ const validacaoSchema = yup.object({
 });
 
 export function FormProcesso(props) {
+
+  const { recarregarProcessos } = useDataContext();
+  const { listaAssunto, listaInteressado} = useDataContext();
+
   const { formType, processoDados, handleModal } = props;
   const history = useHistory();
-  const { listaAssunto, listaInteressado} = useDataContext();
   const classes = useStyle();
   const formik = useFormik({
     initialValues: {
@@ -49,6 +53,7 @@ export function FormProcesso(props) {
       codigoAssunto: processoDados.cdassunto.id,
     },
     validationSchema: validacaoSchema,
+
     onSubmit: (value) => {
       if (formType === "cadastro") {
         new BackendApi(localStorage.getItem("keycloak-token"))
@@ -62,8 +67,8 @@ export function FormProcesso(props) {
               "cdinteressado" : {
                   "id" : value.codigoInteressado
               }})
-          .then((res => {console.log(res)}))
-          .catch((error) => alert(error));
+          .then(toastSuccess('Processo cadastrado com sucesso'))
+          .catch((error) => toastError(error.response.data.message));
         
       } else {
         new BackendApi(localStorage.getItem("keycloak-token"))
@@ -90,11 +95,13 @@ export function FormProcesso(props) {
               }
             }
             )
-          .then((res => {console.log(res)}))
-          .catch((error) => alert(error));
-      }
+            .then(toastSuccess('Processo editado com sucesso'))
+            .catch((error) => toastError(error.response.data.message));
+          }
+          recarregarProcessos();
+          recarregarProcessos();
+          history.push('/');
       handleModal();
-      history.push('/');
     },
   });
   return (

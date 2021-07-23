@@ -25,28 +25,17 @@ const DataProvider = ({ children }) => {
       .consultarTodosOsProcessos()
         .then((res) => setlistaProcesso(res.data))
         .catch((error) => alert(error));
-    setStateLoading("ready")
-  };
+    };
 
   const recarregarProcessos = () => {
     new BackendApi(localStorage.getItem("keycloak-token"))
-    .consultarTodosOsProcessos()
-      .then((res) => setlistaProcesso(res.data))
-      .catch((error) => alert(error));
+      .consultarTodosOsProcessos()
+        .then((res) => setlistaProcesso(res.data))
+        .catch((error) => alert(error));
    }
    
-  //  const conectar = (data) => {
-  //   AxiosLogin.autenticarUsuario(data)
-  //     .then((res) => logar(res))
-  //     .catch((error) => alert(error));
-  // }; 
-
-  //  const removerData = () => {
-  //    setData({state: "waiting",});
-  //  };
-
   return (
-    <DataContext.Provider value={{ stateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos}}>
+    <DataContext.Provider value={{ stateLoading, setStateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos}}>
       {children}
     </DataContext.Provider>
   );

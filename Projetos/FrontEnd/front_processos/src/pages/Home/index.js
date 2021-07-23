@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react";
+
 import { Paper } from "@material-ui/core";
 import Skeleton from "@material-ui/lab/Skeleton";
 
@@ -10,27 +11,27 @@ import { AddProcessButton } from "../../components/AddButton/AddButton";
 import { useDataContext } from "../../utils/context/DataContext";
 
 export const Home = () => {
-  const skeletonItens = [1, 2, 3];
-  
   const [openModal, setOpenModal] = useState(false);
-  const [listaProcessoLocal, setListaProcessoLocal] = useState([]);
   
-  const { stateLoading, listaProcesso, carregarData, recarregarProcessos } = useDataContext();
+  const { stateLoading, setStateLoading, listaProcesso, carregarData } = useDataContext();
 
   const handleModalState = () => {
     setOpenModal((prev) => !prev);
   };
 
+  const stateLoadingFinish = () => {
+    setStateLoading("ready");
+  }
+
+  const timeOutSkeleton = () => {
+    setTimeout(stateLoadingFinish, 3000)
+  }
+
   useEffect(() => {
+    timeOutSkeleton();
     carregarData();
-    setListaProcessoLocal(listaProcesso);
   }, []);
-
-  useEffect(() => {
-    recarregarProcessos();
-    console.log(listaProcessoLocal);
-  }, [listaProcessoLocal]);
-
+  
   return (
     <>
       <Navbar />
@@ -43,17 +44,19 @@ export const Home = () => {
           paddingTop: "50px",
           paddingBottom: "10px", }} >
 
-          {stateLoading === "skeleton" ? (skeletonItens?.map((skeletonItens) => (
+          {stateLoading === "skeleton" ? (listaProcesso?.map((skeletonItens) => (
               <Skeleton
-                key={skeletonItens}
-                width="50%"
-                height="181px"
+                key={skeletonItens.id}
+                width="90%"
+                height="190px"
                 animation="wave"
-                style={{ margin: "auto", borderRadius: "10px" }}
+                style={{ margin: "auto", borderRadius: "10px", marginTop: "-50px" }}
               />
             )))
-          : (listaProcessoLocal?.map((processo) => (
-              <ProcessoCard key={processo.id} processo={processo} />
+          : (listaProcesso?.map((processo) => (
+              <ProcessoCard 
+                key={processo.id} 
+                processo={processo} />
             )))}
       </Paper>
 

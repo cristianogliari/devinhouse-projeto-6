@@ -27,11 +27,17 @@ import {ModalFormulario} from "../ModalFormulario"
 import BackendApi from "../../utils/axios/AxiosBackend";
 import { useStyles } from "./Card.style";
 import { useHistory } from "react-router-dom";
+import { useDataContext } from "../../utils/context/DataContext";
+
+import { toastSuccess, toastError } from "../../utils/alert/toast";
 
 export const ProcessoCard = (props) => {
+  const { key, processo }= props;
+  const { recarregarProcessos } = useDataContext();
+  
   const classes = useStyles();
   const history = useHistory();
-  const {processo}= props;
+
   const [openDialog, setOpenDialog] = useState(false);
   const [openEditModal, setEditModal] = useState(false);
   
@@ -42,9 +48,11 @@ export const ProcessoCard = (props) => {
   const handleDelete = () => {
     new BackendApi(localStorage.getItem("keycloak-token"))
       .removerProcessoPorId(processo) 
-        .then((res => {console.log(res)}))
-        .catch((error) => alert(error));
+        .then(toastSuccess('Processo removido com sucesso'))
+        .catch((res) => toastError(res.response.data.message));
     handleClickDialog();
+    recarregarProcessos();
+    history.push("/");
   }
 
   const [expanded, setExpanded] = useState(false);
@@ -64,7 +72,7 @@ export const ProcessoCard = (props) => {
   return (
     <>
     <ClickAwayListener onClickAway={handleClickAwayEvent}>
-      <Card className={classes.root}>
+      <Card className={classes.root} key={key}>
         <CardContent className={classes.main}>
           <Grid container spacing={0}>
             <Grid item xs={2}>
