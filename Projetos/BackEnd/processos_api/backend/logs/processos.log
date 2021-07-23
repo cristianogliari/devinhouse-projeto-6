@@ -8820,3 +8820,19 @@ insert into processo (assunto_id, interessado_id, chaveprocesso, descricao, nuan
 2021-07-21 23:18:34.576  INFO 33161 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
 2021-07-21 23:18:35.424  INFO 33161 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
 2021-07-21 23:23:18.213  WARN 33161 --- [RMI TCP Connection(77)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-07-22 22:02:44.218  INFO 3392 --- [restartedMain] b.c.d.b.Projeto2Modulo2Application       : Starting Projeto2Modulo2Application using Java 14.0.2 on LAPTOP-U727E6JO with PID 3392 (C:\Users\David\Desktop\Estudos\DevInHouse\Modulo 3\Projeto 1\devinhouse-projeto-6\Projetos\BackEnd\processos_api\backend\target\classes started by David in C:\Users\David\Desktop\Estudos\DevInHouse\Modulo 3\Projeto 1\devinhouse-projeto-6\Projetos\BackEnd\processos_api\backend)
+2021-07-22 22:02:44.297  INFO 3392 --- [restartedMain] b.c.d.b.Projeto2Modulo2Application       : No active profile set, falling back to default profiles: default
+2021-07-22 22:03:08.312  WARN 3392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-22 22:03:19.791  INFO 3392 --- [restartedMain] b.c.d.b.Projeto2Modulo2Application       : Started Projeto2Modulo2Application in 43.242 seconds (JVM running for 48.085)
+2021-07-22 22:04:45.991  INFO 3392 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:10:38.032  INFO 3392 --- [http-nio-8080-exec-5] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:11:20.577  INFO 3392 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:16:17.861  INFO 3392 --- [http-nio-8080-exec-1] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:19:43.868  INFO 3392 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:20:04.247  INFO 3392 --- [http-nio-8080-exec-6] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:23:09.966  INFO 3392 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:25:37.722  INFO 3392 --- [http-nio-8080-exec-4] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:25:53.070  INFO 3392 --- [http-nio-8080-exec-8] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:35:20.501  INFO 3392 --- [http-nio-8080-exec-7] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:35:38.579  INFO 3392 --- [http-nio-8080-exec-3] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos
+2021-07-22 22:37:38.119  INFO 3392 --- [http-nio-8080-exec-9] b.c.d.b.controllers.AssuntoController    : Buscou todos os assuntos

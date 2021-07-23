@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Paper } from "@material-ui/core";
 import Skeleton from "@material-ui/lab/Skeleton";
@@ -11,10 +10,10 @@ import { useDataContext } from "../../utils/context/DataContext";
 
 export const Home = () => {
   const skeletonItens = [1, 2, 3];
-  
+
   const [openModal, setOpenModal] = useState(false);
-  
-  const { stateLoading, listaProcesso, carregarData} = useDataContext();
+
+  const { stateLoading, listaProcesso, carregarData } = useDataContext();
 
   const { loading, setLoading } = useState(true);
 
@@ -30,15 +29,17 @@ export const Home = () => {
     <>
       <Navbar />
 
-      <Paper
-        elevation={3}
-        style={{
-          width: "55%",
-          margin: "auto",
-          paddingTop: "50px",
-          paddingBottom: "10px", }} >
-
-          {loading === "skeleton" ? (skeletonItens?.map((skeletonItens) => (
+      {loading === "skeleton"
+        ? skeletonItens?.map((skeletonItens) => (
+            <Paper
+              elevation={3}
+              style={{
+                width: "55%",
+                margin: "auto",
+                paddingTop: "50px",
+                paddingBottom: "10px",
+              }}
+            >
               <Skeleton
                 key={skeletonItens}
                 width="50%"
@@ -46,17 +47,28 @@ export const Home = () => {
                 animation="wave"
                 style={{ margin: "auto", borderRadius: "10px" }}
               />
-            )))
-          : (listaProcesso?.map((processo) => (
+            </Paper>
+          ))
+        : listaProcesso?.map((processo) => (
+            <Paper
+              elevation={3}
+              style={{
+                width: "55%",
+                margin: "auto",
+                paddingTop: "50px",
+                paddingBottom: "10px",
+              }}
+            >
               <ProcessoCard key={processo.id} processo={processo} />
-            )))}
-      </Paper>
+            </Paper>
+          ))}
 
       <AddProcessButton openModalCadastro={handleModalState} />
 
       <ModalFormulario
         openModal={openModal}
-        handleModalState={handleModalState} />
+        handleModalState={handleModalState}
+      />
     </>
   );
 };
