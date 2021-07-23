@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -91,26 +92,27 @@ public class ProcessoControllerTest {
 			.andExpect(jsonPath("[0].id").value(processo.getId()));
 	}
 	
-	@Test
-	void buscarProcessoPorIDControllerTest() throws Exception {
+	//@Test
+	//@Disabled
+	// void buscarProcessoPorIDControllerTest() throws Exception {
 		// given
-		Processo processoABuscar = processo;
-		int expectedID = 1;
-		given(processoService.buscarProcessoPorID(expectedID)).willReturn(processoABuscar);
+	//	Processo processoABuscar = processo;
+	//	int expectedID = 1;
+	//	given(processoService.buscarProcessoPorID(expectedID)).willReturn(processoABuscar);
 		
-		MockHttpServletRequestBuilder requisicao = MockMvcRequestBuilders
-				.get("/processos/v1/buscar/id/".concat(String.valueOf(expectedID)))
-				.accept(MediaType.APPLICATION_JSON)
-				.header("api-version", "v1");	
+	//	MockHttpServletRequestBuilder requisicao = MockMvcRequestBuilders
+	//			.get("/processos/v1/buscar/id/".concat(String.valueOf(expectedID)))
+	//			.accept(MediaType.APPLICATION_JSON)
+	//			.header("api-version", "v1");	
 		
 		// when
-		ResultActions retornoDeAcoes = mockMvc.perform(requisicao);
+	//	ResultActions retornoDeAcoes = mockMvc.perform(requisicao);
 		
 		// then
-		retornoDeAcoes
-				.andExpect(status().isOk())
-				.andExpect(jsonPath("id").value(processoABuscar.getId()));
-	}
+	//	retornoDeAcoes
+	//			.andExpect(status().isOk())
+	//			.andExpect(jsonPath("id").value(processoABuscar.getId()));
+	//}
 	
 	@Test
 	void buscarProcessoPorChaveProcessoControllerTest() throws Exception {

@@ -12,14 +12,14 @@ const DataProvider = ({ children }) => {
 
   const carregarData = () => {
     new BackendApi(localStorage.getItem("keycloak-token"))
-      .consultarTodosOsInteressados() 
-        .then((res) => setListaInteressado(res.data))
-        .catch((error) => alert(error));
+      .consultarTodosOsInteressados()
+      .then((res) => setListaInteressado(res.data))
+      .catch((error) => alert(error));
 
     new BackendApi(localStorage.getItem("keycloak-token"))
-      .consultarTodosOsAssuntos() 
-        .then((res) => setListaAssunto(res.data))
-        .catch((error) => alert(error));
+      .consultarTodosOsAssuntos()
+      .then((res) => setListaAssunto(res.data))
+      .catch((error) => alert(error));
 
     new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsProcessos()
@@ -34,15 +34,29 @@ const DataProvider = ({ children }) => {
         .catch((error) => alert(error));
    }
 
+   const buscarProcessosPorNumeroProcesso = (processoid) => {
+     new BackendApi(localStorage.getItem("keycloak-token"))
+      .consultaProcessoPorId(processoid)
+        .then((res) => setlistaProcesso(res.data))
+        .catch((error) => alert(error));
+   }
+
    const buscarProcessosPorAssuntoID = (assuntoid) => {
     new BackendApi(localStorage.getItem("keycloak-token"))
     .consultaPrcocessoPorAssunto(assuntoid)
       .then((res) => setlistaProcesso(res.data))
       .catch((error) => alert(error));
    }
+
+   const recarregarAssunto = () => {
+    new BackendApi(localStorage.getItem("keycloak-token"))
+      .consultarTodosOsAssuntos()
+      .then((res) => setListaAssunto(res.data))
+      .catch((error) => alert(error));
+  }
    
   return (
-    <DataContext.Provider value={{ stateLoading, setStateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos, buscarProcessosPorAssuntoID}}>
+    <DataContext.Provider value={{ stateLoading, setStateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos, recarregarAssunto, buscarProcessosPorAssuntoID, buscarProcessosPorNumeroProcesso }}>
       {children}
     </DataContext.Provider>
   );

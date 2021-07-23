@@ -43,7 +43,7 @@ export default class BackendApi {
 
   async consultaProcessoPorId(data) {
     try {
-      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar/id/${data.id}`, {
+      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar/id/${data}`, {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',
@@ -77,7 +77,7 @@ export default class BackendApi {
 
   async consultaPrcocessoPorAssunto(data) {
     try {
-      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar/assunto/id/${data.assunto.id}`, {
+      const response = await axios.get(`${BASE_URL.BASE_PROCESSOS_BACKEND}/backend/processos/v1/buscar/assunto/id/${data}`, {
         headers: {
           'Content-Type' : 'application/json',
           'api-version' : 'v1',

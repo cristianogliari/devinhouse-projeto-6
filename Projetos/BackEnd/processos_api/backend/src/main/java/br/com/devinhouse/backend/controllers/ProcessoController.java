@@ -51,7 +51,7 @@ public class ProcessoController {
 	@RolesAllowed("user-role")
 	@RequestMapping(value = "/buscar/id/{id}", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
-	public Processo buscarProcessoPorIDController(@PathVariable Integer id) {
+	public List<Processo> buscarProcessoPorIDController(@PathVariable Integer id) {
 		return service.buscarProcessoPorID(id);
 	}
 		

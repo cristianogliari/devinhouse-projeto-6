@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 
 import { Paper } from "@material-ui/core";
@@ -12,9 +11,8 @@ import { useDataContext } from "../../utils/context/DataContext";
 
 export const Home = () => {
   const [openModal, setOpenModal] = useState(false);
-  
   const { stateLoading, setStateLoading, listaProcesso, carregarData } = useDataContext();
-
+  
   const handleModalState = () => {
     setOpenModal((prev) => !prev);
   };
@@ -35,12 +33,12 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-
       <Paper
         elevation={3}
         style={{
           width: "55%",
           margin: "auto",
+          marginBottom: "100px",
           paddingTop: "50px",
           paddingBottom: "10px", }} >
 
@@ -59,12 +57,12 @@ export const Home = () => {
                 processo={processo} />
             )))}
       </Paper>
-
       <AddProcessButton openModalCadastro={handleModalState} />
 
       <ModalFormulario
         openModal={openModal}
-        handleModalState={handleModalState} />
+        handleModalState={handleModalState}
+      />
     </>
   );
 };
