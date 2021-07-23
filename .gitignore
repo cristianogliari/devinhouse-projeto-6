@@ -1,7 +1,7 @@
 ## BACK END ##
 ./BackEnd/processos_api/HELP.md
 ./BackEnd/processos_api/target/
-###./BackEnd/processos_api/logs/
+./BackEnd/processos_api/logs/
 !./BackEnd/processos_api/.mvn/wrapper/maven-wrapper.jar
 !**./BackEnd/processos_api/src/main/**/target/
 !**./BackEnd/processos_api/src/test/**/target/
