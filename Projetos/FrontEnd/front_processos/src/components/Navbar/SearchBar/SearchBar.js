@@ -17,7 +17,7 @@ import { useState, useEffect } from "react";
 export function SearchBar() {
   const classes = useStyles();
 
-  const { listaAssunto, setlistaProcesso, listaProcesso } = useDataContext();
+  const { listaAssunto, buscarProcessosPorAssuntoID } = useDataContext();
 
   const [searchState, setSearchState] = useState(true);
   const [assuntoSelecionado, setAssuntoSelecionado] = useState(0);
@@ -27,13 +27,14 @@ export function SearchBar() {
   };
 
   const handleGetProcessos = () => {
-    new BackendApi(localStorage.getItem("keycloak-token")).consultaProcessoPorId(assuntoSelecionado)
-    .then((res) => setlistaProcesso(res))
-    .catch((error) => alert(error));
+    console.log("0000000000000000" + assuntoSelecionado)
+    buscarProcessosPorAssuntoID(assuntoSelecionado);
   }
 
   useEffect(() => {
-    handleGetProcessos();
+    if (assuntoSelecionado !== 0) {
+      handleGetProcessos();
+    }
   }, [assuntoSelecionado]);
 
   return (
