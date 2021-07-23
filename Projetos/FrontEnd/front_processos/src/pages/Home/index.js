@@ -38,6 +38,7 @@ export const Home = () => {
         style={{
           width: "55%",
           margin: "auto",
+          marginBottom: "100px",
           paddingTop: "50px",
           paddingBottom: "10px", }} >
 

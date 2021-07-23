@@ -9,7 +9,6 @@ import {
 import SearchIcon from "@material-ui/icons/Search";
 import TuneIcon from "@material-ui/icons/Tune";
 
-import BackendApi from "../../../utils/axios/AxiosBackend";
 import { useDataContext } from "../../../utils/context/DataContext";
 import { useStyles } from "./SearchBar.styles";
 import { useState, useEffect } from "react";
@@ -17,25 +16,35 @@ import { useState, useEffect } from "react";
 export function SearchBar() {
   const classes = useStyles();
 
-  const { listaAssunto, buscarProcessosPorAssuntoID } = useDataContext();
+  const { listaAssunto, buscarProcessosPorAssuntoID, recarregarProcessos, buscarProcessosPorNumeroProcesso } = useDataContext();
 
   const [searchState, setSearchState] = useState(true);
+  const [numeroProcesso, setNumeroProcesso] = useState('');
   const [assuntoSelecionado, setAssuntoSelecionado] = useState(0);
 
   const handleChangeSearch = () => {
     setSearchState((prev) => !prev);
   };
 
-  const handleGetProcessos = () => {
-    console.log("0000000000000000" + assuntoSelecionado)
+  const handleGetProcessosPorAssunto = () => {
     buscarProcessosPorAssuntoID(assuntoSelecionado);
   }
 
-  useEffect(() => {
-    if (assuntoSelecionado !== 0) {
-      handleGetProcessos();
+  const handleGetProcessosPorId = () => {
+    if (numeroProcesso === "" || numeroProcesso === undefined || numeroProcesso === null) {
+      recarregarProcessos();
+    } else {
+      buscarProcessosPorNumeroProcesso(numeroProcesso);
     }
-  }, [assuntoSelecionado]);
+  }
+
+  useEffect(() => {
+    if (assuntoSelecionado === 0 || searchState === true) {
+      recarregarProcessos();
+    } else {
+      handleGetProcessosPorAssunto();
+    }
+  }, [assuntoSelecionado, searchState]);
 
   return (
     <>
@@ -45,6 +54,7 @@ export function SearchBar() {
           placeholder="Pesquise por um processo"
           variant="outlined"
           size="small"
+          onChange={(e) => setNumeroProcesso(e.target.value)}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -57,7 +67,7 @@ export function SearchBar() {
             ),
             endAdornment: (
               <InputAdornment position="end">
-                <IconButton>
+                <IconButton onClick={handleGetProcessosPorId}>
                   <SearchIcon style={{ color: "black" }} />
                 </IconButton>
               </InputAdornment>

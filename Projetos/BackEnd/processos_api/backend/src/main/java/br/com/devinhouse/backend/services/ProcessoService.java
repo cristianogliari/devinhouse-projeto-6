@@ -1,5 +1,6 @@
 package br.com.devinhouse.backend.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,9 +85,13 @@ public class ProcessoService {
 	}
 	
 //	3 - Deverá haver um endpoint para buscar um processo baseado na sua identificação única (ID);
-	public Processo buscarProcessoPorID(Integer id) {
+	public List<Processo> buscarProcessoPorID(Integer id) {
 		if(verificaExistenciaDeProcesso(id)) {
-			return processoRepository.findById(id).get();
+			List<Processo> todosProcessos = new ArrayList<Processo>();
+			Processo processo = processoRepository.findById(id).get();
+			todosProcessos.add(processo);
+			
+			return todosProcessos;
 		} else {
 			throw new RuntimeException("Processo não localizado.");	
 		}

@@ -34,6 +34,13 @@ const DataProvider = ({ children }) => {
         .catch((error) => alert(error));
    }
 
+   const buscarProcessosPorNumeroProcesso = (processoid) => {
+     new BackendApi(localStorage.getItem("keycloak-token"))
+      .consultaProcessoPorId(processoid)
+        .then((res) => setlistaProcesso(res.data))
+        .catch((error) => alert(error));
+   }
+
    const buscarProcessosPorAssuntoID = (assuntoid) => {
     new BackendApi(localStorage.getItem("keycloak-token"))
     .consultaPrcocessoPorAssunto(assuntoid)
@@ -49,7 +56,7 @@ const DataProvider = ({ children }) => {
   }
    
   return (
-    <DataContext.Provider value={{ stateLoading, setStateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos, recarregarAssunto, buscarProcessosPorAssuntoID}}>
+    <DataContext.Provider value={{ stateLoading, setStateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos, recarregarAssunto, buscarProcessosPorAssuntoID, buscarProcessosPorNumeroProcesso }}>
       {children}
     </DataContext.Provider>
   );
