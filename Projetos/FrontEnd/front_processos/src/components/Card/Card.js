@@ -10,7 +10,12 @@ import {
   IconButton,
   Card,
   ClickAwayListener,
+  Button,
 } from "@material-ui/core";
+
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogTitle from "@material-ui/core/DialogTitle";
 
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import CreateIcon from "@material-ui/icons/Create";
@@ -22,11 +27,18 @@ import {ModalFormulario} from "../ModalFormulario"
 import BackendApi from "../../utils/axios/AxiosBackend";
 import { useStyles } from "./Card.style";
 import { useHistory } from "react-router-dom";
+import { useDataContext } from "../../utils/context/DataContext";
+
+import { toastSuccess, toastError } from "../../utils/alert/toast";
 
 export const ProcessoCard = (props) => {
+  const { key, processo }= props;
+  const { recarregarProcessos } = useDataContext();
+  
   const classes = useStyles();
   const history = useHistory();
-  const {processo}= props;
+
+  const [openDialog, setOpenDialog] = useState(false);
   const [openEditModal, setEditModal] = useState(false);
   
   const handleEditState = () => {
@@ -36,9 +48,11 @@ export const ProcessoCard = (props) => {
   const handleDelete = () => {
     new BackendApi(localStorage.getItem("keycloak-token"))
       .removerProcessoPorId(processo) 
-        .then((res => {console.log(res)}))
-        .catch((error) => alert(error));
-    history.push('/');
+        .then(toastSuccess('Processo removido com sucesso'))
+        .catch((res) => toastError(res.response.data.message));
+    handleClickDialog();
+    recarregarProcessos();
+    history.push("/");
   }
 
   const [expanded, setExpanded] = useState(false);
@@ -51,10 +65,14 @@ export const ProcessoCard = (props) => {
     setExpanded(false);
   };
 
+  const handleClickDialog = () => {
+    setOpenDialog(!openDialog);
+  }
+
   return (
     <>
     <ClickAwayListener onClickAway={handleClickAwayEvent}>
-      <Card className={classes.root}>
+      <Card className={classes.root} key={key}>
         <CardContent className={classes.main}>
           <Grid container spacing={0}>
             <Grid item xs={2}>
@@ -134,7 +152,7 @@ export const ProcessoCard = (props) => {
                   <IconButton 
                   aria-label="deletar" 
                   style={{ padding: "2px" }}
-                  onClick={handleDelete}
+                  onClick={handleClickDialog}
                   >
                     <DeleteIcon
                       fontSize="small"
@@ -201,12 +219,32 @@ export const ProcessoCard = (props) => {
         </CardContent>
       </Card>
     </ClickAwayListener>
+
+    <Dialog
+      open={openDialog}
+      onClose={handleClickDialog}
+      aria-labelledby="responsive-dialog-title" >
+
+        <DialogTitle id="responsive-dialog-title">
+          {"Deseja realmente excluir o processo?"}
+        </DialogTitle>
+
+      <DialogActions>
+        <Button autoFocus onClick={handleClickDialog} color="secondary">
+          Cancelar
+        </Button>
+        <Button onClick={handleDelete} color="primary" autoFocus>
+          Confirmar
+        </Button>
+
+      </DialogActions>
+    </Dialog>
+
     <ModalFormulario
       key={processo.id}
       openModal={openEditModal}
       handleModalState={handleEditState}
-      processo={processo}
-    />
+      processo={processo} />
   </>
   );
 };
