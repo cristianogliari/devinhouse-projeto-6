@@ -9,6 +9,10 @@ import { CustomThemeProvider } from "./utils/context/themeContext";
 import { DataProvider } from "./utils/context/DataContext";
 import { useKeycloak } from "@react-keycloak/web";
 
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   const { initialized } = useKeycloak();
   const { keycloak } = useKeycloak();
@@ -17,6 +21,7 @@ function App() {
 
   return (
     <DataProvider>
+      <ToastContainer />
       <CustomThemeProvider>
         <BrowserRouter>    
             {!initialized ? (

@@ -12,8 +12,7 @@ export const AddProcessButton = (props) => {
       aria-label="add" 
       className={classes.root} 
       style={{ padding: '40px' }} 
-      onClick={openModalCadastro}
-      >
+      onClick={openModalCadastro} >
         <AddIcon fontSize="large" />
     </Fab>
   )
