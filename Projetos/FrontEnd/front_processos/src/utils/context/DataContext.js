@@ -33,9 +33,16 @@ const DataProvider = ({ children }) => {
         .then((res) => setlistaProcesso(res.data))
         .catch((error) => alert(error));
    }
+
+   const buscarProcessosPorAssuntoID = (assuntoid) => {
+    new BackendApi(localStorage.getItem("keycloak-token"))
+    .consultaPrcocessoPorAssunto(assuntoid)
+      .then((res) => setlistaProcesso(res.data))
+      .catch((error) => alert(error));
+   }
    
   return (
-    <DataContext.Provider value={{ stateLoading, setStateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos}}>
+    <DataContext.Provider value={{ stateLoading, setStateLoading, listaAssunto, listaProcesso, listaInteressado, carregarData, recarregarProcessos, buscarProcessosPorAssuntoID}}>
       {children}
     </DataContext.Provider>
   );
