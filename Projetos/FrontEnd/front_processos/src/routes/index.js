@@ -9,7 +9,6 @@ export const Routes = () => {
         <Redirect to='/inicio' />
       </Route>
       <PrivateRoute path='/inicio' component={Home} />
-      <Route exact path='/login' component={Login} />
     </Switch>
   )
 }

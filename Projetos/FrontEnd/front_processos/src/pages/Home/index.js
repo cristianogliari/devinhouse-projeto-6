@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { Paper } from "@material-ui/core";
+import { Box, Paper, Typography } from "@material-ui/core";
 import Skeleton from "@material-ui/lab/Skeleton";
 
 import { Navbar } from "../../components/Navbar";
@@ -41,8 +41,15 @@ export const Home = () => {
           marginBottom: "100px",
           paddingTop: "50px",
           paddingBottom: "10px", }} >
-
-          {stateLoading === "skeleton" ? (listaProcesso?.map((skeletonItens) => (
+          
+          {Object.keys(listaProcesso).length === 0 ? (
+            <Box style={{ display: 'flex', justifyContent: 'center',margin: 'auto' }}>
+              <Typography style={{ paddingBottom: '35px' }}>
+                Nenhum processo encontrado
+              </Typography>
+            </Box>
+          ) : (
+            stateLoading === "skeleton" ? (listaProcesso?.map((skeletonItens) => (
               <Skeleton
                 key={skeletonItens.id}
                 width="90%"
@@ -55,7 +62,8 @@ export const Home = () => {
               <ProcessoCard 
                 key={processo.id} 
                 processo={processo} />
-            )))}
+            )))
+          )}  
       </Paper>
       <AddProcessButton openModalCadastro={handleModalState} />
 

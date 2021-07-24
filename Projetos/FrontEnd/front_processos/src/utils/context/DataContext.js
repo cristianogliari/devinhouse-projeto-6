@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState } from "react";
 
 import BackendApi from "../axios/AxiosBackend";
+import { toastError } from "../alert/toast";
 
 const DataContext = createContext({});
 
@@ -14,45 +15,45 @@ const DataProvider = ({ children }) => {
     new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsInteressados()
       .then((res) => setListaInteressado(res.data))
-      .catch((error) => alert(error));
+      .catch((error) => toastError('Erro de conexão, tente novamente'));
 
     new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsAssuntos()
       .then((res) => setListaAssunto(res.data))
-      .catch((error) => alert(error));
+      .catch((error) => toastError('Erro de conexão, tente novamente'));
 
     new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsProcessos()
         .then((res) => setlistaProcesso(res.data))
-        .catch((error) => alert(error));
+        .catch((error) => toastError('Erro de conexão, tente novamente'));
     };
 
   const recarregarProcessos = () => {
     new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsProcessos()
         .then((res) => setlistaProcesso(res.data))
-        .catch((error) => alert(error));
+        .catch((error) => toastError('Erro de conexão, tente novamente'));
    }
 
    const buscarProcessosPorNumeroProcesso = (processoid) => {
      new BackendApi(localStorage.getItem("keycloak-token"))
       .consultaProcessoPorId(processoid)
         .then((res) => setlistaProcesso(res.data))
-        .catch((error) => alert(error));
+        .catch((error) => toastError('Erro de conexão, tente novamente'));
    }
 
    const buscarProcessosPorAssuntoID = (assuntoid) => {
     new BackendApi(localStorage.getItem("keycloak-token"))
     .consultaPrcocessoPorAssunto(assuntoid)
       .then((res) => setlistaProcesso(res.data))
-      .catch((error) => alert(error));
+      .catch((error) => toastError('Erro de conexão, tente novamente'));
    }
 
    const recarregarAssunto = () => {
     new BackendApi(localStorage.getItem("keycloak-token"))
       .consultarTodosOsAssuntos()
       .then((res) => setListaAssunto(res.data))
-      .catch((error) => alert(error));
+      .catch((error) => toastError('Erro de conexão, tente novamente'));
   }
    
   return (

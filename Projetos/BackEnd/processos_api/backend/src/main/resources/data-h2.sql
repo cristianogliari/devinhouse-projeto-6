@@ -26,13 +26,13 @@ INSERT INTO interessado(id, nminteressado, nuidentificacao, dtnascimento, flativ
 	( '8', 'Tim Cook', '04028860032', '2000-01-01', 'S'),
 	( '9', 'Kevin Scott', '52425145079', '2000-01-01', 'S');
 	
-INSERT INTO processo(id, nuprocesso, sgorgaosetor, nuano, chaveprocesso, descricao, assunto_id, interessado_id) VALUES
-	( '1', '1', 'TECH', '2021', 'TECH 1/2021', 'Necessidade escolha do DB para registrar as informações da viagem ao espaço', '1', '1'),
-	( '2', '2', 'TECH', '2021', 'TECH 2/2021', 'Métodos ágeis para se desenvolver um carro autônomo para deixar as pessoas dormir no volante', '2', '2'),
-	( '3', '3', 'TECH', '2021', 'TECH 3/2021', 'Arquitetura e desenvolvimento para sistemas de comércio eletrônico de alto impacto ao usuário', '3', '3'),
-	( '4', '4', 'TECH', '2021', 'TECH 4/2021', 'Necessidade de governança para estruturação da empresa quanto aos meios de tecnologia', '4', '4'),
-	( '5', '5', 'TECH', '2021', 'TECH 5/2021', 'Desenvolvimento da Azure para tentar arrecadar dinheiro para ir ao espaço igual o Bezos', '5', '5'),
-	( '6', '6', 'TECH', '2021', 'TECH 6/2021', 'Desenvolvimento de nova linguagem autônoma para programar sozinha', '6', '6'),
-	( '7', '7', 'TECH', '2021', 'TECH 7/2021', 'Copiar recurso de Storie do snapchat porquê não quiseram vender a empresa pra nós do Facebook', '7', '7'),
-	( '8', '8', 'TECH', '2021', 'TECH 8/2021', 'Décima tentativa de inovar igual ao tio Steve', '14', '8'),
-	( '9', '9', 'TECH', '2021', 'TECH 9/2021', 'Criar perfil de marketing digital para vender produtos', '13', '9');
+-- INSERT INTO processo(id, nuprocesso, sgorgaosetor, nuano, chaveprocesso, descricao, assunto_id, interessado_id) VALUES
+-- 	( '1', '1', 'TECH', '2021', 'TECH 1/2021', 'Necessidade escolha do DB para registrar as informações da viagem ao espaço', '1', '1'),
+-- 	( '2', '2', 'TECH', '2021', 'TECH 2/2021', 'Métodos ágeis para se desenvolver um carro autônomo para deixar as pessoas dormir no volante', '2', '2'),
+-- 	( '3', '3', 'TECH', '2021', 'TECH 3/2021', 'Arquitetura e desenvolvimento para sistemas de comércio eletrônico de alto impacto ao usuário', '3', '3'),
+-- 	( '4', '4', 'TECH', '2021', 'TECH 4/2021', 'Necessidade de governança para estruturação da empresa quanto aos meios de tecnologia', '4', '4'),
+-- 	( '5', '5', 'TECH', '2021', 'TECH 5/2021', 'Desenvolvimento da Azure para tentar arrecadar dinheiro para ir ao espaço igual o Bezos', '5', '5'),
+-- 	( '6', '6', 'TECH', '2021', 'TECH 6/2021', 'Desenvolvimento de nova linguagem autônoma para programar sozinha', '6', '6'),
+-- 	( '7', '7', 'TECH', '2021', 'TECH 7/2021', 'Copiar recurso de Storie do snapchat porquê não quiseram vender a empresa pra nós do Facebook', '7', '7'),
+-- 	( '8', '8', 'TECH', '2021', 'TECH 8/2021', 'Décima tentativa de inovar igual ao tio Steve', '14', '8'),
+-- 	( '9', '9', 'TECH', '2021', 'TECH 9/2021', 'Criar perfil de marketing digital para vender produtos', '13', '9');
