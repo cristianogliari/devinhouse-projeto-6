@@ -10,15 +10,15 @@ const renderComponent = (props) =>
 
 const mockHistoryPush = jest.fn();
 
-jest.mock('react-router-dom', () => ({
-  ...jest.requireActual('react-router-dom'),
+jest.mock("react-router-dom", () => ({
+  ...jest.requireActual("react-router-dom"),
   useHistory: () => ({
     push: mockHistoryPush,
   }),
 }));
 
 const providerRender = (props) => {
-  return render(
+  render(
     <DataProvider>
       <ProcessoCard processo={props.propsProcesso} />
     </DataProvider>
@@ -33,7 +33,7 @@ describe("Card Component", () => {
       nuprocesso: "12345678",
       chaveprocesso: "SOFT/2000",
       sgorgaosetor: "SOFT",
-      cdinteressado: { nmInteressado: "Maria" },
+      cdinteressado: { nminteressado: "Maria" },
       cdassunto: { descricao: "Assunto do Card" },
     },
   };
@@ -41,10 +41,30 @@ describe("Card Component", () => {
   it("Deve renderizar de forma correta o Card", () => {
     renderComponent(props);
 
+    expect(screen.getByTitle("Processo logo")).toBeInTheDocument();
     expect(screen.getByText("Processo")).toBeInTheDocument();
   });
 
-  it("Deve testar a funcionalidade do botão", async () => {
+  it("Deve testar a funcionalidade do botão expandir", async () => {
+    renderComponent(props);
+    userEvent.click(screen.getByLabelText("mostrar mais informações"));
+    await waitFor(() => expect(screen.getByText("Teste")).toBeInTheDocument());
+  });
+
+  it("Deve testar se apresenta os valores do processo corretamente", async () => {
+    renderComponent(props);
+
+    expect(screen.getByText("SOFT/2000")).toBeInTheDocument();
+    expect(screen.getByText("2000")).toBeInTheDocument();
+    expect(screen.getByText("Assunto do Card")).toBeInTheDocument();
+    userEvent.click(screen.getByLabelText("mostrar mais informações"));
+    await waitFor(() => {
+      expect(screen.getByText("Teste")).toBeInTheDocument();
+      expect(screen.getByText("Maria")).toBeInTheDocument();
+    });
+  });
+
+  it("Deve testar a funcionalidade do botão deletar", async () => {
     providerRender(props);
 
     userEvent.click(screen.getByLabelText("deletar"));
@@ -54,13 +74,17 @@ describe("Card Component", () => {
       ).toBeInTheDocument()
     );
     userEvent.click(screen.getByRole("button", { name: "Confirmar" }));
-    await waitFor(() =>
+    await waitFor(() => {
       expect(
         screen.queryByText("Deseja realmente excluir o processo?")
-      ).not.toBeInTheDocument()
-    );
-    await waitFor(() =>
-      expect(mockHistoryPush).toHaveBeenCalledWith('/')
-    );
+      ).not.toBeInTheDocument();
+      expect(mockHistoryPush).toHaveBeenCalledWith("/");
+    });
+  });
+
+  it("Deve testar a funcionalidade do botão editar", async () => {
+    renderComponent(props);
+    userEvent.click(screen.getByLabelText("editar"));
+    await waitFor(() => expect(screen.getByText("Editar Processo")).toBeInTheDocument());
   });
 });
