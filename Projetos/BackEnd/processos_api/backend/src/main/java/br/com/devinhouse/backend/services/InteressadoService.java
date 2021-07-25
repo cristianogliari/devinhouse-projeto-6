@@ -2,6 +2,8 @@ package br.com.devinhouse.backend.services;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +12,8 @@ import br.com.devinhouse.backend.repositories.InteressadoRepository;
 
 @Service
 public class InteressadoService {
+	
+	private static final Logger LOGGER = LogManager.getLogger(InteressadoService.class);
 
 	@Autowired
 	private InteressadoRepository repository;
@@ -32,6 +36,7 @@ public class InteressadoService {
 			obj.setFlativo("S");
 			return repository.save(obj);
 		} else {
+			LOGGER.error("Tentou cadastrar um CPF ja existente na base de dados, CPF {}", obj.getNuidentificacao());
 			throw new RuntimeException("CPF ja possui cadastro.");
 		}
 	};
@@ -52,6 +57,7 @@ public class InteressadoService {
 		if(verificarCadastroNuidentificacao(interessadoEncontrado.getNuidentificacao())) {
 			return interessadoEncontrado;
 		} else {
+			LOGGER.error("Tentou pesquisar por um CPF que nao existe na base de dados, CPF: {}", termo);
 			throw new RuntimeException("CPF nao cadastrado.");
 		}
 	}

@@ -19,11 +19,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.devinhouse.backend.entities.Interessado;
 import br.com.devinhouse.backend.services.InteressadoService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @RestController	
 @RequestMapping(value = "/interessados/v1", headers = "api-version=v1")
 @CrossOrigin
 public class InteressadoController {
+	
+	private static final Logger LOGGER = LogManager.getLogger(InteressadoController.class);
 
 	@Autowired
 	private InteressadoService service;
@@ -34,6 +38,7 @@ public class InteressadoController {
 	@RequestMapping(value = "/cadastrar", method = POST, consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
 	public Interessado cadastrarInteressadoController(@RequestBody Interessado interessado) {
+		LOGGER.info("Cadastrou o interessado: {}", interessado.getNminteressado());
 		return service.cadastrarInteressado(interessado);
 	}
 	
@@ -42,6 +47,7 @@ public class InteressadoController {
 	@RequestMapping(value = "/buscar", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Interessado> buscarTodosOsInteressados() {
+		LOGGER.info("Buscou todos os interessados");
 		return service.buscarTodosOsInteressados();
 	}
 	
@@ -50,6 +56,7 @@ public class InteressadoController {
 	@RequestMapping(value = "/buscar/id/{id}", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Interessado buscarInteressadoPeloIdController(@PathVariable Integer id) {
+		LOGGER.info("Buscou interessado com id: {}", id);
 		return service.buscarInteressadoPeloId(id);
 	}
 	
@@ -58,6 +65,7 @@ public class InteressadoController {
 	@RequestMapping(value = "/buscar/cpf/{cpf}", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Interessado buscarInteressadoPeloCpfController(@PathVariable String cpf) {
+		LOGGER.info("Buscou interessado atraves do CPF: {}", cpf);
 		return service.buscarInteressadoPeloCpf(cpf);
 	}
 }
