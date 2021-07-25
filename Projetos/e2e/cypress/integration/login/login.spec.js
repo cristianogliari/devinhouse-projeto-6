@@ -12,7 +12,7 @@ describe("Login", () => {
     //Clicar no botão enviar
     cy.get("input[type=submit]").click();
 
-    // Verificar se redirecionou para a /home novamente
+    // Verificar se redirecionou para a /inicio novamente
     cy.url().should("include", "/inicio");
   });
 
@@ -21,14 +21,11 @@ describe("Login", () => {
     cy.visit("/inicio");
 
     //Clicar no botão sair
-    // cy.get("button").find("Sair").click();
-    // cy.get("button").contains("Sair").click();
-    cy.get("button").find('Jeff Bezos').click();
-    cy.get("span").contains('Sair').click();
-    // cy.get("button#logout").find('logout').click();
-    // cy.get("button").find("span").contains('Sair').click();
+    cy.get('button').contains('Jeff Bezos').click().as('dropDrownMenu');
+    cy.wait(6000);
+    cy.get('button').contains('Sair').click();
 
-    // Verificar se redirecionou para a /home novamente
+    // Verificar se redirecionou para a /inicio novamente
     cy.url().should("include", "/inicio");
   });
 });
