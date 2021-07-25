@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false",
     "test:dev": "react-scripts test",
-    "coverage": "react-scripts test --coverage --watchAll=false",
+    "cobertura": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -58,7 +58,7 @@
       }
     },
     "collectCoverageFrom": [
-      "src/**/*.{js}",      
+      "src/**/*.js",
       "!src/**/*.{style,styles}.js",
       "!src/**/(index|App).js"
     ]
