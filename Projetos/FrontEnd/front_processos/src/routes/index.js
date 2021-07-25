@@ -1,5 +1,5 @@
 import { Redirect, Route, Switch } from "react-router-dom";
-import { Home, Login } from "../pages";
+import { Home } from "../pages";
 import { PrivateRoute } from "./utils";
 
 export const Routes = () => {
