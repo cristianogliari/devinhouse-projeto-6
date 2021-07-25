@@ -3,6 +3,8 @@ package br.com.devinhouse.backend.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,8 @@ import br.com.devinhouse.backend.repositories.ProcessoRepository;
 
 @Service
 public class ProcessoService {
+	
+	private static final Logger LOGGER = LogManager.getLogger(ProcessoService.class);
 	
 	@Autowired
 	private ProcessoRepository processoRepository;
@@ -47,11 +51,13 @@ public class ProcessoService {
 		
 //		Não poderá ser cadastrado um novo processo com assuntos inesistentes no sistema
 		if(assuntoLocalizado == null) {
+			LOGGER.error("Nao foi localizado assunto com id: {}", obj.getCdassunto().getId());
 			throw new RuntimeException("Assunto não localizado, favor informar um assunto válido.");
 		}
 		
 //		Não poderá ser cadastrado um novo processo com interessados inesistentes no sistema;
 		if(interessadoLocalizado == null) {
+			LOGGER.error("Nao foi localizado interessado com id: {}", obj.getCdinteressado().getId());
 			throw new RuntimeException("Interessado não localizado, favor informar um interessado válido.");
 		}
 
@@ -59,6 +65,7 @@ public class ProcessoService {
 		if(assuntoLocalizado.getFlativo().charAt(0) == ativo) {
 			obj.setCdassunto(assuntoLocalizado);
 		} else {
+			LOGGER.error("Tentou cadastrar processo com assunto inativo, assunto informado: {}", obj.getCdassunto().getDescricao());
 			throw new RuntimeException("Assunto inativo, favor selecionar um assunto ativo.");
 		}
 				
@@ -66,6 +73,7 @@ public class ProcessoService {
 		if(interessadoLocalizado.getFlativo().charAt(0) == ativo) {
 			obj.setCdinteressado(interessadoLocalizado);	
 		} else {
+			LOGGER.error("Tentou cadastrar processo com interessado inativo, interessado informado: {}", obj.getCdinteressado().getNminteressado());
 			throw new RuntimeException("Interessado inativo, favor selecionar um interassado ativo.");
 		}
 		
@@ -93,6 +101,7 @@ public class ProcessoService {
 			
 			return todosProcessos;
 		} else {
+			LOGGER.error("Nao localizou processo atraves da id: {}", id);
 			throw new RuntimeException("Processo não localizado.");	
 		}
 	}	
@@ -133,6 +142,7 @@ public class ProcessoService {
 				if(assuntoLocalizado.getFlativo().charAt(0) == ativo) {
 					processoEncontrado.setCdassunto(assuntoLocalizado);
 				} else {
+					LOGGER.error("O assunto indicado esta inativo, assunto: {}", obj.getCdassunto().getDescricao());
 					throw new RuntimeException("Assunto inativo, favor selecionar um assunto ativo.");
 				}
 			}
@@ -141,11 +151,14 @@ public class ProcessoService {
 				if(interessadoLocalizado.getFlativo().charAt(0) == ativo) {
 					processoEncontrado.setCdinteressado(interessadoLocalizado);	
 				} else {
+					LOGGER.error("O interessado indicado esta inativo, interessado: {}", obj.getCdinteressado().getNminteressado());
 					throw new RuntimeException("Interessado inativo, favor selecionar um interessado ativo.");
 				}
 			}
 			return processoRepository.save(processoEncontrado);			
-		} throw new RuntimeException("Processo não encontrado");
+		} 
+		LOGGER.error("Nao encontrou processo com ID {}", id);
+		throw new RuntimeException("Processo não encontrado");
 	}
 	
 //	8 - Deverá haver um endpoint para exclusão de um processo baseado na sua identificação única (ID);
@@ -156,6 +169,7 @@ public class ProcessoService {
 			
 			return processoRepository.findAll();	
 		} else {
+			LOGGER.error("Tentou remover processo atraves da ID {}, que nao existe na base de dados", id);
 			throw new RuntimeException("Processo não localizado");
 		}
 	}

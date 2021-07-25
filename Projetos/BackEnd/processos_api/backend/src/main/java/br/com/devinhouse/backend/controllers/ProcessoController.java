@@ -10,6 +10,8 @@ import java.util.List;
 
 import javax.annotation.security.RolesAllowed;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -28,6 +30,8 @@ import br.com.devinhouse.backend.services.ProcessoService;
 @CrossOrigin
 public class ProcessoController {
 	
+	private static final Logger LOGGER = LogManager.getLogger(ProcessoController.class);
+	
 	@Autowired
 	private ProcessoService service;
 	
@@ -36,6 +40,7 @@ public class ProcessoController {
 	@RequestMapping(value = "/cadastrar", method = POST, consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
 	public Processo criarProcesso(@RequestBody Processo obj) {
+		LOGGER.info("Cadastrou o processo com descricao: {}", obj.getDescricao());
 		return service.cadastrarProcesso(obj);
 	}
 	
@@ -44,6 +49,7 @@ public class ProcessoController {
 	@RequestMapping(value = "/buscar", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Processo> buscarTodosOsProcessosController() {
+		LOGGER.info("Buscou todos os processos");
 		return service.buscarTodosOsProcessos();
 	}	
 	
@@ -52,6 +58,7 @@ public class ProcessoController {
 	@RequestMapping(value = "/buscar/id/{id}", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Processo> buscarProcessoPorIDController(@PathVariable Integer id) {
+		LOGGER.info("Buscou o processo atraves da id: {}", id);
 		return service.buscarProcessoPorID(id);
 	}
 		
@@ -60,6 +67,7 @@ public class ProcessoController {
 	@RequestMapping(value = "/buscar/chaveprocesso", produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Processo buscarProcessoPorChaveProcessoController(@RequestParam("value") String termo) {
+		LOGGER.info("Buscou o processo pela chave de processo: {}", termo);
 		return service.buscarProcessoPorChaveProcesso(termo);
 	}	
 	
@@ -68,6 +76,7 @@ public class ProcessoController {
 	@RequestMapping(value = "/buscar/interessado/id/{interessado}", produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Processo> buscarProcessosPorInteressadosController(@PathVariable("interessado") Integer termo) {
+		LOGGER.info("Buscou os processos com interessado ID: {}", termo);
 		return service.buscarProcessosPorInteressados(termo);
 	}
 	
@@ -76,6 +85,7 @@ public class ProcessoController {
 	@RequestMapping(value = "/buscar/assunto/id/{assunto}", produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Processo> buscarProcessosPorAssuntoController(@PathVariable("assunto") Integer termo) {
+		LOGGER.info("Buscou os processos com o assunto ID: {}", termo);
 		return service.buscarProcessosPorAssunto(termo);
 	}
 	
@@ -84,6 +94,7 @@ public class ProcessoController {
 	@RequestMapping(value = "/atualizar/id/{id}", method = PUT, consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Processo atualizarProcessoPorIDController(@PathVariable Integer id, @RequestBody Processo obj) {
+		LOGGER.info("Atualizou o processo de ID {} com novas informacoes", id);
 		return service.atualizarProcessoPorID(id, obj);
 	}
 	
@@ -92,6 +103,7 @@ public class ProcessoController {
 	@RequestMapping(value = "/remover/id/{id}", method = DELETE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public List<Processo> removerProcessoPorIDController(@PathVariable Integer id) {
+		LOGGER.info("Removeu o processo com ID: {}", id);
 		return service.removerProcessoPorID(id);
 	}
 }

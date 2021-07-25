@@ -27,7 +27,7 @@ import br.com.devinhouse.backend.services.AssuntoService;
 @CrossOrigin
 public class AssuntoController {
 	
-	private static final Logger LOGGER = LogManager.getLogger();
+	private static final Logger LOGGER = LogManager.getLogger(AssuntoController.class);
 
 	@Autowired
 	private AssuntoService service;
@@ -36,6 +36,7 @@ public class AssuntoController {
 	@RequestMapping(value = "/cadastrar", method = POST, consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
 	public Assunto cadastrarAssunto(@RequestBody Assunto assunto) {
+		LOGGER.info("Cadastrou assunto: {}", assunto.getDescricao());
 		return service.cadastrarAssunto(assunto);
 	}
 	
@@ -51,6 +52,7 @@ public class AssuntoController {
 	@RequestMapping(value = "/buscar/id/{id}", method = GET, produces = APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Assunto buscarAssuntoPeloId(@PathVariable Integer id) {
+		LOGGER.info("Buscou assunto pela id: {}", id);
 		return service.buscarAssuntoPeloId(id);
 	}
 }
