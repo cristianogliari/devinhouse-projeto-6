@@ -50,3 +50,8 @@
 ./FrontEnd/front_processos/.changelog
 ./FrontEnd/front_processos/.npm/
 ./FrontEnd/front_processos/yarn.lock
+
+# End-to-End
+./e2e/cypress/videos
+./e2e/cypress/screenshots
+./e2e/DS_Store
