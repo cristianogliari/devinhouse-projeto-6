@@ -25,7 +25,7 @@ import card_img from "../../assets/images/card_img.png";
 
 import {ModalFormulario} from "../ModalFormulario"
 import BackendApi from "../../utils/axios/AxiosBackend";
-import { useStyles } from "./Card.style";
+import { useStyles } from "./Card.styles";
 import { useHistory } from "react-router-dom";
 import { useDataContext } from "../../utils/context/DataContext";
 

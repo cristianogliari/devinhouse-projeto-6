@@ -1,6 +1,6 @@
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import { useStyles } from './AddButton.style';
+import { useStyles } from './AddButton.styles';
 
 export const AddProcessButton = (props) => {
   const classes = useStyles();
