@@ -19,12 +19,4 @@ describe("LogoArea Component", () => {
         const img = screen.getByAltText("rocketlaunchwhite");
         expect(img.getAttribute("src")).toContain(rocketlaunchwhite);
     })
-
-    /* APRENDER COMO FAZER TESTE EM CASO DE TERNÁRIO */
-    //TODO: Fazer o teste do foguete preto do dark theme
-    /* it("Deve renderizar o foguete preto da logo", () => {
-        customRender();
-        const img = screen.getByAltText("rocketlaunch");
-        expect(img.getAttribute("src")).toContain(rocketlaunchwhite);
-    }) */
 })

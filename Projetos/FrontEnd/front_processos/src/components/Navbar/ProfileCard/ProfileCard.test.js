@@ -12,11 +12,6 @@ const renderComponent = (onClickEvent) => render(
     />)
 
 describe("ProfileCard Component", () => {
-    
-    /* it("Deve renderizar o ProfileCard", () => {
-        
-    }) */
-
     it("Deve Renderizar a imagem do avatar", () => {
         renderComponent();
         const { keycloak } = useKeycloak();
@@ -40,7 +35,4 @@ describe("ProfileCard Component", () => {
         const { keycloak } = useKeycloak();
         expect(screen.getByText("Sair")).toBeInTheDocument();
     })
-
-
-
 })

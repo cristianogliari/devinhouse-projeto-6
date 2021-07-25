@@ -25,8 +25,5 @@ describe("Avatar Component", () => {
         userEvent.click(screen.getByText("bezos"));
         expect(onClick).toBeCalled;
     })
-
-    /* it("Deve chamar função de click no botao de chamar o changeTheme", () => {
-    }) */
 })
     
