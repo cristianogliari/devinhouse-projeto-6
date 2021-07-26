@@ -1,0 +1,57 @@
+## BACK END ##
+./BackEnd/processos_api/HELP.md
+./BackEnd/processos_api/target/
+./BackEnd/processos_api/logs/
+!./BackEnd/processos_api/.mvn/wrapper/maven-wrapper.jar
+!**./BackEnd/processos_api/src/main/**/target/
+!**./BackEnd/processos_api/src/test/**/target/
+
+### STS ###
+./BackEnd/processos_api/.apt_generated
+./BackEnd/processos_api/.classpath
+./BackEnd/processos_api/.factorypath
+./BackEnd/processos_api/.project
+./BackEnd/processos_api/.settings
+./BackEnd/processos_api/.springBeans
+./BackEnd/processos_api/.sts4-cache
+
+### IntelliJ IDEA ###
+./BackEnd/processos_api/.idea
+*./BackEnd/processos_api/.iws
+*./BackEnd/processos_api/.iml
+*./BackEnd/processos_api/.ipr
+
+### NetBeans ###
+./BackEnd/processos_api/nbproject/private/
+./BackEnd/processos_api/nbbuild/
+./BackEnd/processos_api/dist/
+./BackEnd/processos_api/nbdist/
+./BackEnd/processos_api/.nb-gradle/
+./BackEnd/processos_api/build/
+!**./BackEnd/processos_api/src/main/**/build/
+!**./BackEnd/processos_api/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+## FRONT END ##
+./FrontEnd/front_processos/.idea/
+./FrontEnd/front_processos/.vscode/
+./FrontEnd/front_processos/node_modules/
+./FrontEnd/front_processos/build
+./FrontEnd/front_processos/.DS_Store
+./FrontEnd/front_processos/*.tgz
+./FrontEnd/front_processos/my-app*
+./FrontEnd/front_processos/template/src/__tests__/__snapshots__/
+./FrontEnd/front_processos/lerna-debug.log
+./FrontEnd/front_processos/npm-debug.log*
+./FrontEnd/front_processos/yarn-debug.log*
+./FrontEnd/front_processos/yarn-error.log*
+./FrontEnd/front_processos/.changelog
+./FrontEnd/front_processos/.npm/
+./FrontEnd/front_processos/yarn.lock
+
+# End-to-End
+./e2e/cypress/videos
+./e2e/cypress/screenshots
+./e2e/DS_Store

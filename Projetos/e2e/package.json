@@ -1,0 +1,12 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Deve ser adicionado o código fonte do e2e desenvolvido",
+  "main": "index.js",
+  "scripts": {		
+    "test": "npx cypress run",
+    "open": "npx cypress open"
+  },
+  "author": "",
+  "license": "ISC"
+}
