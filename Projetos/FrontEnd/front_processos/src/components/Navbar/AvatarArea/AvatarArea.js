@@ -11,10 +11,12 @@ export function AvatarArea(props) {
   const classes = useStyles();
   const { changeTheme } = useCustomTheme();
   const { handleChangeInfoPerfil, avatar, nomeCompleto } = props;
+  
   return (
     <>
       <Button className={classes.button} onClick={handleChangeInfoPerfil}>
         <Avatar 
+          alt="avatar-img"
           src={avatar}
           className={classes.avatar} />
         {nomeCompleto}

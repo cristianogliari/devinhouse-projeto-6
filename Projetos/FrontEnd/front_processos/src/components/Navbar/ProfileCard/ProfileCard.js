@@ -29,6 +29,7 @@ export function ProfileCard(props) {
           <CardHeader
             avatar={
               <Avatar
+              alt="avatar-img"
                 className={classes.avatar}
                 src={avatar}
               />

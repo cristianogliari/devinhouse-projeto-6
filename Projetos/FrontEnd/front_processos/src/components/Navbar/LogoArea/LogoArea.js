@@ -24,7 +24,7 @@ export function LogoArea() {
           ) : (
             <img
             src={rocketlaunchwhite}
-            alt="rocketlaunch"
+            alt="rocketlaunchwhite"
             className={classes.img}
           />
         )}

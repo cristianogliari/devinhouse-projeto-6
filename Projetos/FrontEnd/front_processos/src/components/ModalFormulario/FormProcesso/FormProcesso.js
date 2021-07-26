@@ -25,12 +25,12 @@ const validacaoSchema = yup.object({
     .length(4, "Digite 4 caracteres para o Orgão!")
     .required("Orgão é obrigatorio!"),
   codigoInteressado: yup
-    .number("Escolha uma opção!")
-    .moreThan(0, "Escolha uma opção!")
+    .number("Escolha um Interessado")
+    .moreThan(0, "Escolha um Interessado!")
     .required("Interessado é obrigatorio!"),
   codigoAssunto: yup
-    .number("Escolha uma opção!")
-    .moreThan(0, "Escolha uma opção!")
+    .number("Escolha um Assunto")
+    .moreThan(0, "Escolha um Assunto!")
     .required("Assunto é obrigatorio!"),
 });
 
@@ -230,6 +230,7 @@ export function FormProcesso(props) {
               id="chaveDeProcesso"
               name="chaveDeProcesso"
               label="Chave Processo"
+              value={formik.values.chaveDeProcesso}
             />
           )}
         </div>

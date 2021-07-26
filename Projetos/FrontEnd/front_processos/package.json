@@ -8,6 +8,9 @@
     "@material-ui/lab": "*",
     "@material-ui/styles": "^4.11.4",
     "@react-keycloak/web": "^3.4.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.0",
     "axios": "^0.21.1",
     "formik": "^2.2.9",
     "jwt-decode": "^3.1.2",
@@ -22,7 +25,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
+    "test:dev": "react-scripts test",
+    "cobertura": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +47,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 70,
+        "branches": 70,
+        "functions": 70,
+        "lines": 70
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.{style,styles}.js",
+      "!src/**/(index|App).js"
+    ],
+    "transform": {
+      "\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
   }
 }
