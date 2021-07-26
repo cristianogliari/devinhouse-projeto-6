@@ -61,6 +61,9 @@
       "src/**/*.js",
       "!src/**/*.{style,styles}.js",
       "!src/**/(index|App).js"
-    ]
+    ],
+    "transform": {
+      "\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
   }
 }
