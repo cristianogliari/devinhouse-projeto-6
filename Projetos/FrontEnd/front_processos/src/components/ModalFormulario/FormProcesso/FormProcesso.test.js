@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 
 import { FormProcesso } from "./FormProcesso";
 
+
 const renderComponent = (props) =>
   render(
     <FormProcesso
@@ -12,10 +13,32 @@ const renderComponent = (props) =>
     />
   );
 
-describe("FormProcesso Component", () => {
-  const onSubmit = jest.fn();
+  const mockHistoryPush = jest.fn();
+
+  jest.mock("react-router-dom", () => ({
+    ...jest.requireActual("react-router-dom"),
+    useHistory: () => ({
+      push: mockHistoryPush,
+    }),
+  }));
+
+  const mockProcessos = jest.fn().mockImplementation(() => {return "teste"});
+
+  jest.mock("../../../utils/context/DataContext", () => ({
+    ...jest.requireActual("../../../utils/context/DataContext"),
+    useDataContext: () => ({
+      recarregarProcessos: mockProcessos,
+      listaAssunto: [{id: 1, descricao:"Madeira"}],
+      listaInteressado: [{id: 1, nminteressado:"Maria"}],
+    }),
+  }));
+
+  const onCadastro = jest.fn().mockImplementation(() => "cadastrado");
+  const onEditar = jest.fn().mockImplementation(() => "editado");
+
+  describe("FormProcesso Component", () => {
   let propsCadastro = {
-    propsModal: onSubmit,
+    propsModal: onCadastro,
     propsType: "cadastro",
     propsCadastro: {
       nuano: "",
@@ -28,7 +51,7 @@ describe("FormProcesso Component", () => {
     },
   };
   let propsEditar = {
-    propsModal: onSubmit,
+    propsModal: onEditar,
     propsType: "editar",
     propsCadastro: {
       nuano: "2000",
@@ -36,8 +59,8 @@ describe("FormProcesso Component", () => {
       nuprocesso: "12345678",
       chaveprocesso: "SOFT/2000",
       sgorgaosetor: "SOFT",
-      cdinteressado: { id: 0 },
-      cdassunto: { id: 0 },
+      cdinteressado: { id: 1 },
+      cdassunto: { id: 1 },
     },
   };
   it("Deve renderizar o Formulario de Processo na forma Cadastro Corretamente", () => {
@@ -67,8 +90,8 @@ describe("FormProcesso Component", () => {
 
     expect(screen.getByLabelText("Numero Processo")).toBeDisabled();
     expect(screen.getByLabelText("Numero Processo")).toHaveValue("12345678");
-    expect(screen.getByLabelText("Interessado")).toBeInTheDocument();
-    expect(screen.getByLabelText("Assunto")).toBeInTheDocument();
+    expect(screen.getByLabelText("Maria")).toBeInTheDocument();
+    expect(screen.getByLabelText("Madeira")).toBeInTheDocument();
     expect(screen.getByLabelText("Ano do Processo")).toHaveDisplayValue("2000");
     expect(screen.getByLabelText("Orgao")).toBeDisabled();
     expect(screen.getByLabelText("Orgao")).toHaveValue("SOFT");
@@ -155,6 +178,15 @@ describe("FormProcesso Component", () => {
     );
   });
 
+  it("Deve permitir escolher um interessado", async () => {
+    renderComponent(propsCadastro);
+
+    userEvent.click(screen.getByLabelText("Interessado"));
+    await waitFor(() =>
+      expect(screen.getByText("Maria")).toBeInTheDocument(),
+    );
+  });
+
   it("Deve testar a validacao do Assunto", async () => {
     renderComponent(propsCadastro);
 
@@ -163,4 +195,46 @@ describe("FormProcesso Component", () => {
       expect(screen.getByText("Escolha um Assunto!")).toBeInTheDocument()
     );
   });
+
+  it("Deve permitir escolher um assunto", async () => {
+    renderComponent(propsCadastro);
+
+   userEvent.click(screen.getByLabelText("Assunto"));
+    await waitFor(() =>
+      expect(screen.getByText("Madeira")).toBeInTheDocument(),
+    );
+  });
+
+  it("Deve tentar editar um processo", async () => {
+    renderComponent(propsEditar);
+
+    userEvent.click(screen.getByRole("button", { name: "Salvar" }));
+    await waitFor(() => expect(mockProcessos).toBeCalled());
+    expect(onEditar).toReturn(),
+    expect(mockHistoryPush).toHaveBeenCalledWith("/");
+
+  });
+
+  it("Deve tentar cadastrar um processo", async () => {
+    renderComponent(propsCadastro);
+
+    userEvent.type(screen.getByLabelText("Ano do Processo"), "1990");
+    userEvent.type(screen.getByLabelText("Orgao"), "SOFT");
+    userEvent.type(screen.getByLabelText("Descricao"), "Teste Processo");
+
+    userEvent.click(screen.getByLabelText("Interessado"));
+    await waitFor(() =>
+      userEvent.click(screen.getByText("Maria")),
+    );
+    userEvent.click(screen.getByLabelText("Assunto"));
+    await waitFor(() =>
+      userEvent.click(screen.getByText("Madeira")),
+    );
+
+    userEvent.click(screen.getByRole("button", { name: "Salvar" }));
+    await waitFor(() => expect(mockProcessos).toBeCalled());
+    expect(onCadastro).toReturn();
+    expect(mockHistoryPush).toHaveBeenCalledWith("/");
+  });
+
 });
